@@ -3,123 +3,33 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="d611c1ee-9ce7-42c2-9a28-ec5ed79df3ed" name="默认的" comment="">
-      <change afterPath="$PROJECT_DIR$/Dantiao.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Dantiao.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/Dantiao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/Dantiao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/Arena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/Arena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/ArenaCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/ArenaCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/ArenaCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/ArenaCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/ArenaCreatorsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/ArenaCreatorsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/ArenasManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/ArenasManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/Finisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/Finisher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/Starter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/CommandsExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/CommandsExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/CommandsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/CommandsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/SubCommand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/SubCommand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/AdminHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/AdminHelp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/ArenaInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/ArenaInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/ArenaOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/ArenaOP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/ArenaOP_Commands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/ArenaOP_Commands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/BlackList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/BlackList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Changelang.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Changelang.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Dan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Dan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/EnergyCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/EnergyCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Lobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Lobby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/MainHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/MainHelp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/PlayerHelp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/PlayerHelp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Points.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Points.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Quit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Quit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RankingOP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RankingOP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RankingPlayer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RankingPlayer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RecordsCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RecordsCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Reload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Reload.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RequestAccept.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RequestAccept.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RequestDeny.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RequestDeny.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RequestSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/RequestSend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/ShopCMD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/ShopCMD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Starting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Starting.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Stop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Stop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/Timetable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/UpdateForcibly.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/UpdateForcibly.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/WatchGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/sub/WatchGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/way/AdminCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/way/AdminCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/commands/way/InServerCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/commands/way/InServerCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/DataFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/DataFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/PlayerSet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/PlayerSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/languagefile/LanguageFileLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/languagefile/LanguageFileLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/languagefile/MessageBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/languagefile/MessageBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/languagefile/MessageSender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/languagefile/MessageSender.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/languagefile/SymbolLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/languagefile/SymbolLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/languagefile/SymbolsExecutor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/languagefile/SymbolsExecutor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/updata/FileVersionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/updata/FileVersionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/updata/UpdateAreas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/updata/UpdateAreas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/updata/UpdateConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/updata/UpdateConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/updata/UpdatePlayerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/updata/UpdatePlayerData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/updata/UpdateShop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/configuration/updata/UpdateShop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/dan/CommonDan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/dan/CommonDan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/dan/Dan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/dan/Dan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/dan/DansHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/dan/DansHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/dan/DefaultDanLoader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/dan/DefaultDanLoader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/dan/InitialDan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/dan/InitialDan.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/dan/type/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/dan/type/Common.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/dan/type/Initial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/dan/type/Initial.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/data/DuelAmountData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/data/DuelAmountData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/effect/WinFirework.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/effect/WinFirework.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/energy/Energy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/energy/Energy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/ArenaCreate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/ArenaCreate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/Chat.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/Chat.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/EventRegister.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/EventRegister.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/JoinServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/JoinServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/EndGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/EndGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/Move.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/Move.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/PVP.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/PVP.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/Protection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/Protection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/Teleport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/Teleport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/TypeCommands.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/TypeCommands.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/WatcherTeleport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/game/WatcherTeleport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/gui/RecordsGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/gui/RecordsGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/gui/ShopGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/gui/ShopGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/gui/StartGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/gui/StartGUI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/requests/LeaveServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/requests/LeaveServer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/sign/ClickSign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/sign/ClickSign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/event/sign/CreateSign.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/event/sign/CreateSign.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/inventory/Records.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/inventory/Records.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/inventory/Shop.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/inventory/Shop.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/inventory/special/Start.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/inventory/special/Start.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/inventory/special/StartInvHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/inventory/special/StartInvHolder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/itemstack/GUIItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/itemstack/GUIItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/itemstack/PlayerItems.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/itemstack/PlayerItems.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/metrics/Metrics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/metrics/Metrics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/papi/RegPAPI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/papi/RegPAPI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/queue/SearchingQueue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/queue/SearchingQueue.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/ranking/HD.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/ranking/HD.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/ranking/Ranking.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/ranking/Ranking.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/request/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/request/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/request/RequestsHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/request/RequestsHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/specialtext/Click.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/specialtext/Click.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/specialtext/Dec.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/specialtext/Dec.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/task/RecordData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/task/RecordData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/task/VersionChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/task/VersionChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/teleport/ToLobby.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/teleport/ToLobby.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/teleport/ToWatchingPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/teleport/ToWatchingPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/timetable/TimeChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/timetable/TimeChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/timetable/Timetable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/timetable/Timetable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/util/ItemChecker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/util/ItemChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/util/ItemCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/util/ItemCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/util/ItemGiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/util/ItemGiver.java" afterDir="false" />
-    </list>
+    <list default="true" id="d611c1ee-9ce7-42c2-9a28-ec5ed79df3ed" name="默认的" comment="pom添加本地依赖-注释 如果无法下jar请去掉注释&#10;添加过滤文件 提交过滤无关文件&#10;过滤jar防止把依赖提交上去" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -127,11 +37,17 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="D:\JetBrains\IntelliJ IDEA 2020.1.4\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
   <component name="ProjectId" id="1flWec0hvhDL58Fr9NiTD6GZoYL" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -139,12 +55,33 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="SONARLINT_PRECOMMIT_ANALYSIS" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lib" />
     <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GitHub\Dantiao\lib" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -154,8 +91,35 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1596793257063</updated>
+      <workItem from="1596804921874" duration="775000" />
     </task>
+    <task id="LOCAL-00001" summary="pom添加本地依赖-注释 如果无法下jar请去掉注释&#10;添加过滤文件 提交过滤无关文件&#10;过滤jar防止把依赖提交上去">
+      <created>1596805457044</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1596805457044</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="pom添加本地依赖-注释 如果无法下jar请去掉注释&#10;添加过滤文件 提交过滤无关文件&#10;过滤jar防止把依赖提交上去" />
+    <option name="LAST_COMMIT_MESSAGE" value="pom添加本地依赖-注释 如果无法下jar请去掉注释&#10;添加过滤文件 提交过滤无关文件&#10;过滤jar防止把依赖提交上去" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#项目结构" timestamp="1596793545580">
