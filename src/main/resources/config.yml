@@ -1,0 +1,80 @@
+Message:
+  Prefix: '&8&l[&bPVP&8&l] '
+Energy:
+  Enable: true
+  Need: 90
+  Max: 300
+  PerSecond: 0.5
+Timetable:
+  Searching:
+    - 0:00-23:55
+  Invite:
+    - 0:00-23:55
+WorldLimit:
+  Enable: false
+  Worlds:
+    - 'example_pvp_world1'
+    - 'example_pvp_world2'
+Rewards:
+  Points: 2
+  WinExp: 60
+  MaxExp: 130
+  DrawExp: 25
+  Firework: true
+CheckVersion: true
+Lang: 'zh_CN'
+InitialDan: "&7[无段位]&r"
+BanShowingDan: false
+BanClickToSend: false
+hd: TrHologram
+ProtectionExp: 2000
+ItemLimit:
+  Material:
+  - SNOW_BALL
+  Lore:
+  - '&aTest lore'
+Broadcast-Winning-Streak-Times: 3
+Arena-Creator-Material: STICK
+Dan:
+  dan1:
+    Name: "&f[&2青铜I&f]&r"
+    Exp: 50
+  dan2:
+    Name: "&f[&2青铜II&f]&r"
+    Exp: 150
+  dan3:
+    Name: "&f[&2青铜III&f]&r"
+    Exp: 280
+  dan4:
+    Name: "&f[&3黑铁I&f]&r"
+    Exp: 500
+  dan5:
+    Name: "&f[&3黑铁II&f]&r"
+    Exp: 760
+  dan6:
+    Name: "&f[&3黑铁III&f]&r"
+    Exp: 1200
+  dan7:
+    Name: "&f[&e黄金I&f]&r"
+    Exp: 1550
+  dan8:
+    Name: "&f[&e黄金II&f]&r"
+    Exp: 2100
+  dan9:
+    Name: "&f[&e黄金III&f]&r"
+    Exp: 3500
+  dan10:
+    Name: "&f[&b钻石I&f]&r"
+    Exp: 5000
+  dan11:
+    Name: "&f[&b钻石II&f]&r"
+    Exp: 6666
+  dan12:
+    Name: "&f[&b钻石III&f]&r"
+    Exp: 8888
+  dan13:
+    Name: "&f[&6&l战斗天尊&f]&r"
+    Exp: 10000
+  dan14:
+    Name: "&f[&d&l荣耀王者&f]&r"
+    Exp: 15000
