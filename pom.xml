@@ -64,7 +64,7 @@
 	     <artifactId>TrHologram</artifactId>
 	     <version>1.11</version>
 	     <scope>system</scope>
-	     <systemPath>C:\Users\Administrator\Desktop\TrHologram-1.11.jar</systemPath>
+	     <systemPath>${project.basedir}\lib\TrHologram.jar</systemPath>
 	   </dependency>
 	   <!-- <dependency>
 	     <groupId>com.github.Arasple</groupId>
