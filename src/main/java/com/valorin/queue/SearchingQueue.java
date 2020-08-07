@@ -1,4 +1,4 @@
-﻿package com.valorin.queue;
+package com.valorin.queue;
 
 public class SearchingQueue {
   private String waiter;

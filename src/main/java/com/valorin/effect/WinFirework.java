@@ -1,4 +1,4 @@
-﻿package com.valorin.effect;
+package com.valorin.effect;
 
 import org.bukkit.Color;
 import org.bukkit.FireworkEffect;

@@ -1,4 +1,4 @@
-﻿ package com.valorin.event.gui;
+ package com.valorin.event.gui;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

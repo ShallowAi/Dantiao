@@ -1,4 +1,4 @@
-﻿package com.valorin.commands.way;
+package com.valorin.commands.way;
 
 public interface InServerCommands {
 

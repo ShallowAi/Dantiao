@@ -1,4 +1,4 @@
-﻿package com.valorin.request;
+package com.valorin.request;
 
 import static com.valorin.configuration.languagefile.MessageSender.sm;
 

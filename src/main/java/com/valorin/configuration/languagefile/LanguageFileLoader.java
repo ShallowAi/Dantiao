@@ -1,4 +1,4 @@
-﻿package com.valorin.configuration.languagefile;
+package com.valorin.configuration.languagefile;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

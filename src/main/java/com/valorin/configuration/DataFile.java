@@ -1,4 +1,4 @@
-﻿package com.valorin.configuration;
+package com.valorin.configuration;
 
 import java.io.File;
 import java.io.IOException;

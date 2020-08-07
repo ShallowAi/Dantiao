@@ -1,4 +1,4 @@
-﻿package com.valorin.ranking;
+package com.valorin.ranking;
 
 import static com.valorin.configuration.DataFile.areas;
 import static com.valorin.configuration.DataFile.ranking;

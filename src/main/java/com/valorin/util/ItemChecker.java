@@ -15,7 +15,7 @@ public class ItemChecker {
   	  	  ItemStack itemStack = inv.getItem(slot);
   	  	  if (itemStack.hasItemMeta()) {
   	  		if (itemStack.getItemMeta().getLore() != null) {
-  	  		  if (itemStack.getItemMeta().getLore().contains(lore.replace("&", "§"))) {
+  	  		  if (itemStack.getItemMeta().getLore().contains(lore.replace("&", "ยง"))) {
   	  			hasItem = true;
   	  			break;
   	  		  }

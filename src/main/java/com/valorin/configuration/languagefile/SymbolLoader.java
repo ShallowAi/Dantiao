@@ -1,4 +1,4 @@
-﻿package com.valorin.configuration.languagefile;
+package com.valorin.configuration.languagefile;
 
 import static com.valorin.configuration.DataFile.symbolsFile;
 

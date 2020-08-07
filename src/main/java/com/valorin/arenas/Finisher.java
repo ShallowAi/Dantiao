@@ -1,4 +1,4 @@
-﻿package com.valorin.arenas;
+package com.valorin.arenas;
 
 import static com.valorin.Dantiao.getInstance;
 import static com.valorin.arenas.ArenasManager.busyArenasName;

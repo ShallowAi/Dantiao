@@ -1,4 +1,4 @@
-﻿package com.valorin.arenas;
+package com.valorin.arenas;
 
 import java.util.List;
 import static com.valorin.configuration.languagefile.MessageSender.sm;

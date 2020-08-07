@@ -1,4 +1,4 @@
-﻿package com.valorin.specialtext;
+package com.valorin.specialtext;
 
 import net.md_5.bungee.api.chat.ClickEvent;
 import net.md_5.bungee.api.chat.TextComponent;

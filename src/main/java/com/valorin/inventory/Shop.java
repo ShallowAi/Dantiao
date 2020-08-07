@@ -1,4 +1,4 @@
-﻿package com.valorin.inventory;
+package com.valorin.inventory;
 
 import static com.valorin.configuration.DataFile.shop;
 

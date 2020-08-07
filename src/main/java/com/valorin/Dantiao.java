@@ -1,4 +1,4 @@
-﻿package com.valorin;
+package com.valorin;
 
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;

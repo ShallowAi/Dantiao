@@ -1,4 +1,4 @@
-﻿package com.valorin.dan;
+package com.valorin.dan;
 
 public class Dan {
   private int num;

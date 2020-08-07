@@ -1,4 +1,4 @@
-﻿package com.valorin.inventory.special;
+package com.valorin.inventory.special;
 
 import static com.valorin.configuration.languagefile.MessageSender.gm;
 import static com.valorin.configuration.languagefile.MessageSender.sm;

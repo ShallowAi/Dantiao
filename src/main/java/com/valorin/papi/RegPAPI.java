@@ -1,4 +1,4 @@
-﻿package com.valorin.papi;
+package com.valorin.papi;
 
 import static com.valorin.Dantiao.getInstance;
 import static com.valorin.api.DantiaoAPI.getMaxEnergy;

@@ -1,4 +1,4 @@
-﻿package com.valorin.configuration.updata;
+package com.valorin.configuration.updata;
 
 import java.util.List;
 

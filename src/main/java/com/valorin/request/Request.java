@@ -1,4 +1,4 @@
-﻿package com.valorin.request;
+package com.valorin.request;
 
 public class Request {
   private String sender;

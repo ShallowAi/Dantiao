@@ -1,4 +1,4 @@
-﻿package com.valorin.teleport;
+package com.valorin.teleport;
 
 import static com.valorin.configuration.DataFile.areas;
 

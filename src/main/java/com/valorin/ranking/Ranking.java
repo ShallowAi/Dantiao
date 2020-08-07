@@ -1,4 +1,4 @@
-﻿package com.valorin.ranking;
+package com.valorin.ranking;
 
 import java.util.ArrayList;
 import java.util.List;

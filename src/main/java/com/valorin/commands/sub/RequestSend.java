@@ -1,4 +1,4 @@
-﻿package com.valorin.commands.sub;
+package com.valorin.commands.sub;
 
 import static com.valorin.Dantiao.getInstance;
 import static com.valorin.configuration.DataFile.blacklist;

@@ -1,4 +1,4 @@
-﻿package com.valorin.dan;
+package com.valorin.dan;
 
 import com.valorin.Dantiao;
 import com.valorin.dan.type.Initial;

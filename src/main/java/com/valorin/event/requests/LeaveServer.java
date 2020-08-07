@@ -1,4 +1,4 @@
-﻿package com.valorin.event.requests;
+package com.valorin.event.requests;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

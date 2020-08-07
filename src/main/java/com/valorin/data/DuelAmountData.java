@@ -1,4 +1,4 @@
-﻿package com.valorin.data;
+package com.valorin.data;
 
 public class DuelAmountData {
   private int amount;

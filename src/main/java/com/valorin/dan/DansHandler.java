@@ -1,4 +1,4 @@
-﻿package com.valorin.dan;
+package com.valorin.dan;
 
 import static com.valorin.configuration.DataFile.pd;
 

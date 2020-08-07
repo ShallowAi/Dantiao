@@ -1,4 +1,4 @@
-﻿package com.valorin.task;
+package com.valorin.task;
 
 import static com.valorin.Dantiao.getInstance;
 import static com.valorin.configuration.DataFile.areas;

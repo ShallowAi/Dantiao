@@ -1,4 +1,4 @@
-﻿package com.valorin.commands;
+package com.valorin.commands;
 
 import java.util.HashSet;
 import java.util.Set;

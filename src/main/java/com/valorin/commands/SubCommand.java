@@ -1,4 +1,4 @@
-﻿package com.valorin.commands;
+package com.valorin.commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;

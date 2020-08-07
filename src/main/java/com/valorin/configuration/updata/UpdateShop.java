@@ -1,4 +1,4 @@
-﻿package com.valorin.configuration.updata;
+package com.valorin.configuration.updata;
 
 import static com.valorin.configuration.DataFile.saveShop;
 import static com.valorin.configuration.DataFile.shop;

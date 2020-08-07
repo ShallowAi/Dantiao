@@ -1,4 +1,4 @@
-﻿package com.valorin.util;
+package com.valorin.util;
 
 import java.util.ArrayList;
 import java.util.List;

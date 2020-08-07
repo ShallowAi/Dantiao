@@ -1,4 +1,4 @@
-﻿package com.valorin.inventory.special;
+package com.valorin.inventory.special;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;

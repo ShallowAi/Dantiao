@@ -38,7 +38,7 @@ public class VersionChecker extends BukkitRunnable {
 		    String[] messageStringArray = (context.split("\\[change]")[1]).split("\\[next]");
 		    List<String> messageList = new ArrayList<String>();
 		    for (String message : messageStringArray) {
-		        messageList.add(message.replace("&", "§"));
+		        messageList.add(message.replace("&", "ยง"));
 		    }
         	update.setVersion(version);
         	update.setContext(messageList);

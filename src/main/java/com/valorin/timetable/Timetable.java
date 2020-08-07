@@ -1,4 +1,4 @@
-﻿package com.valorin.timetable;
+package com.valorin.timetable;
 
 import java.util.ArrayList;
 import java.util.List;

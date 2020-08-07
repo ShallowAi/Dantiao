@@ -1,4 +1,4 @@
-﻿package com.valorin.arenas;
+package com.valorin.arenas;
 
 import static com.valorin.configuration.DataFile.areas;
 import static com.valorin.configuration.DataFile.areasFile;

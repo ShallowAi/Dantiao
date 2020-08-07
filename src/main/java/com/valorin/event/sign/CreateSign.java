@@ -1,4 +1,4 @@
-﻿package com.valorin.event.sign;
+package com.valorin.event.sign;
 
 import static com.valorin.configuration.languagefile.MessageSender.gm;
 import static com.valorin.configuration.languagefile.MessageSender.sm;

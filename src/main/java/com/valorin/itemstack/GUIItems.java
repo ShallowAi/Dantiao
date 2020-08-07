@@ -1,4 +1,4 @@
-﻿package com.valorin.itemstack;
+package com.valorin.itemstack;
 
 import static com.valorin.configuration.DataFile.pd;
 import static com.valorin.configuration.DataFile.records;

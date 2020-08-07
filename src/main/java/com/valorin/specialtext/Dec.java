@@ -1,4 +1,4 @@
-﻿package com.valorin.specialtext;
+package com.valorin.specialtext;
 
 import org.bukkit.entity.Player;
 

@@ -1,4 +1,4 @@
-﻿package com.valorin.energy;
+package com.valorin.energy;
 
 import static com.valorin.Dantiao.getInstance;
 

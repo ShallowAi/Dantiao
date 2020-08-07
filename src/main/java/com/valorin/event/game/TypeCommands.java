@@ -1,4 +1,4 @@
-﻿package com.valorin.event.game;
+package com.valorin.event.game;
 
 import static com.valorin.configuration.languagefile.MessageSender.sm;
 
