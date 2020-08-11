@@ -128,12 +128,13 @@ public class Starter {
 		return;
 	  }
 	}
-	Arena arena = null;
+	Arena arena = new Arena("");
 	if (arenaName == null) { arena = getRandomArena(); }//随机获取一个竞技场
 	else { arena = getInstance().getArenasHandler().getArena(arenaName); }//获取OP强制开始时指定的竞技场
 	if (arena == null) { 
 	  sm("&c[x]警告：开赛时发生异常，不予开赛！",p1,p2); 
-	  p1.closeInventory();p2.closeInventory();
+	  p1.closeInventory();
+	  p2.closeInventory();
 	  return; 
 	}
 	String pn1 = p1.getName(), pn2 = p2.getName();
@@ -147,9 +148,7 @@ public class Starter {
 	DansHandler dh = getInstance().getDansHandler();
 	arena.setDan(true, dh.getPlayerDan(pn1));
 	arena.setDan(false, dh.getPlayerDan(pn2));
-	
-	p1.teleport(getArenasPointA(arenaName));
-	p2.teleport(getArenasPointB(arenaName));
+
 	if (p1.isFlying()) {
 	  if (!p1.isOp()) {
 	    p1.setFlying(false); 
@@ -160,12 +159,6 @@ public class Starter {
 		p2.setFlying(false); 
 	  }
 	}
-	p1.setHealth(p1.getMaxHealth());
-	p2.setHealth(p2.getMaxHealth());
-	p1.setFoodLevel(20);
-	p2.setFoodLevel(20);
-	p1.setGameMode(GameMode.SURVIVAL);
-	p2.setGameMode(GameMode.SURVIVAL);
 	
 	arena.start(pn1, pn2);
 	busyArenasName.add(arenaName);
