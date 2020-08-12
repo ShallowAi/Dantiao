@@ -11,7 +11,7 @@ public class CreateSign implements Listener{
 	@EventHandler
 	public void onCreateMatchingSign(SignChangeEvent e) {
 	  String content = e.getLine(0);
-	  if (content.equals(gm("[单挑匹配]",null))) {
+	  if (content.equals(gm("[决斗匹配]",null))) {
 	    e.setLine(0, "§9"+content);
 	    sm("&a[v]快捷木牌创建成功！",e.getPlayer());
 	  }

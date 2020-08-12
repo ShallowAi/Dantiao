@@ -43,7 +43,7 @@ public class CheckVersion implements Listener{
 		      if (!update.isNew()) {
 		    	  sender.sendMessage("");
 		    	  sender.sendMessage("§8§l[§bDantiao§8§l]");
-		    	  sender.sendMessage("§f- §a单挑插件发现最新版本：§d"+version+"§a可替换现在的旧版本§c"+versionNow);
+		    	  sender.sendMessage("§f- §a决斗插件发现最新版本：§d"+version+"§a可替换现在的旧版本§c"+versionNow);
 			      if (messageList.size() != 0) {
 			          sender.sendMessage("§7更新内容:");
 			          for (String message : messageList) {
@@ -52,7 +52,7 @@ public class CheckVersion implements Listener{
 			      }
 		      } else {
 		    	  sender.sendMessage("");
-		    	  sender.sendMessage("§8§l[§bDantiao§8§l] §7单挑插件已更新到最新版本§a"+versionNow);
+		    	  sender.sendMessage("§8§l[§bDantiao§8§l] §7决斗插件已更新到最新版本§a"+versionNow);
 		    	  sender.sendMessage("");
 		      }
 	      }

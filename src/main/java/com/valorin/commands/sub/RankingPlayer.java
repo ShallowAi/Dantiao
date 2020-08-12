@@ -31,14 +31,14 @@ public class RankingPlayer extends SubCommand{
 		  sm("&c[x]这条指令只能由服务器内的玩家执行！后台无法使用！",p);
 		  return true;
 	    }
-		sm("&6单挑排行榜信息 [right]",p,false);
+		sm("&6决斗排行榜信息 [right]",p,false);
 		sm("&b胜场数排名：第&d{ranking}&b名",p,"ranking",new String[]{""+r.getWin(p)},false);
 		sm("&bKD比值排名：第&d{ranking}&b名",p,"ranking",new String[]{""+r.getKD(p)},false);
 		sm("&e查看其他人的？输入 &f/dt rank win或kd &e查看全服排名",p,false);
 		return true;
 	  } else {
 		if (args[1].equalsIgnoreCase("win")) {
-		  sm("&b[star1]单挑-胜场排行榜[star2]",p);
+		  sm("&b[star1]决斗-胜场排行榜[star2]",p);
 	      if (ranking.getStringList("Win").size() != 0) {
 	    	List<String> winlist = ranking.getStringList("Win");
 	    	int max = 0;
@@ -68,7 +68,7 @@ public class RankingPlayer extends SubCommand{
 		  return true;
 		}
 		if (args[1].equalsIgnoreCase("kd")) {
-		  sm("&b[star1]单挑-KD比值排行榜[star2]",p);
+		  sm("&b[star1]决斗-KD比值排行榜[star2]",p);
 	      if (ranking.getStringList("KD").size() != 0) {
 	    	List<String> kdlist = ranking.getStringList("KD");
 	    	int max = 0;

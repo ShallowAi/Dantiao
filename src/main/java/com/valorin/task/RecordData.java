@@ -91,7 +91,7 @@ public class RecordData {
 	        double reward = getInstance().getConfig().getDouble("Rewards.Points");
 	        pd.set(winner+".Points", pd.getDouble(winner+".Points") + reward);
 	        savepd();
-	        sm("&b做的不错！奖励你 &d{points} &b点单挑积分",w,"points",new String[]{""+reward});
+	        sm("&b做的不错！奖励你 &d{points} &b点决斗积分",w,"points",new String[]{""+reward});
 	    }
     
         if (isDraw) {
@@ -293,7 +293,7 @@ public class RecordData {
 			if (arenaName == null) {
 			  arenaName = "";
 			}
-		    bc(gm("&b[战报]: &7玩家 &e{winner} &7在单挑赛场&r{arenaname}&r&7上以 &6{time}秒 &7击败玩家 &e{loser}",null,"winner arenaname time loser",new String[]{winner,arenaName,arena.getTime()+"",loser}));
+		    bc(gm("&b[战报]: &7玩家 &e{winner} &7在决斗赛场&r{arenaname}&r&7上以 &6{time}秒 &7击败玩家 &e{loser}",null,"winner arenaname time loser",new String[]{winner,arenaName,arena.getTime()+"",loser}));
 	  } else { //平局
 		  int drawExp = getInstance().getConfig().getInt("Rewards.DrawExp");
 		  changeExp(w,pd.getInt(winner+".Exp")+drawExp);
@@ -313,7 +313,7 @@ public class RecordData {
 		  if (arenaDisplayName == null) {
 			  arenaDisplayName = "";
 		  }
-		  bc(gm("&b[战报]: &7玩家 &e{p1} &7与 &e{p2} &7在单挑赛场&r{arenaname}&r&7上打成平手，实为精妙！",null,"p1 arenaname p2",new String[]{winner,arenaDisplayName,loser}));
+		  bc(gm("&b[战报]: &7玩家 &e{p1} &7与 &e{p2} &7在决斗赛场&r{arenaname}&r&7上打成平手，实为精妙！",null,"p1 arenaname p2",new String[]{winner,arenaDisplayName,loser}));
 	  }
 	  
 	  int winTime = pd.getInt(winner+".Winning-Streak-Times");

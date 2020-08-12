@@ -18,10 +18,10 @@ public class Show {
 		
 		TextComponent txt = new TextComponent();
 		if (shower != null) {
-			txt.setText(gm("&f{shower} &7: &b[分享：{player}的单挑战绩&7(鼠标移动到此处查看详情)&b]",null
+			txt.setText(gm("&f{shower} &7: &b[分享：{player}的决斗战绩&7(鼠标移动到此处查看详情)&b]",null
 					,"shower player",new String[]{shower.getName(), player.getName()}));
 		} else {
-			txt.setText(gm("&f{shower} &7: &b[分享：{player}的单挑战绩&7(鼠标移动到此处查看详情)&b]",null
+			txt.setText(gm("&f{shower} &7: &b[分享：{player}的决斗战绩&7(鼠标移动到此处查看详情)&b]",null
 					,"shower player",new String[]{player.getName(), player.getName()}));
 		}
 	    List<String> lore = recordItem.getItemMeta().getLore();

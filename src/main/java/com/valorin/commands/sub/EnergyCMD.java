@@ -19,7 +19,7 @@ public class EnergyCMD extends SubCommand{
 
 	public void sendHelp(Player p) {
 		sm("",p);
-		sm("&3&lDan&b&l&oTiao &f&l>> &a管理员帮助：单挑精力值操作",p,false);
+		sm("&3&lDan&b&l&oTiao &f&l>> &a管理员帮助：决斗精力值操作",p,false);
 		sm("&b/dt energy(e) add <玩家名> <数额> &f- &a为某玩家增加精力值",p,false);
 		sm("&b/dt energy(e) set <玩家名> <数额> &f- &a设定某玩家的精力值",p,false);
 		sm("",p);

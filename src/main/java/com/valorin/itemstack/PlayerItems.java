@@ -24,7 +24,7 @@ public class PlayerItems {
       
 	  return new ItemCreator(
 	  material,
-	  gm("&7&l[&b单挑竞技场&7&l]&f&l-&e快捷创建工具&a[v]",p), 
+	  gm("&7&l[&b决斗竞技场&7&l]&f&l-&e快捷创建工具&a[v]",p),
 	  gml("&6[right] &f&n左键&7点击空气设置&b&nA&7点|&6[right] &f&n右键&7点击空气设置&d&nB&7点| |&e保存-输入：|&e/dt a create <竞技场编辑名> <竞技场名称>",p),
 	  mark1,true)
 	  .get();
@@ -34,8 +34,8 @@ public class PlayerItems {
     public static ItemStack getInvitation(Player p) {
 	  return new ItemCreator(
 	  Material.PAPER, 
-	  gm("&f&l[&b单挑&7-&b全服邀请函&f&l]",p), 
-	  gml("&6[right] &7输入&f&n/dt sendall&7即可在聊天框里发送单挑请求|&6[right] &7每次消耗1个本道具| ",p),
+	  gm("&f&l[&b决斗&7-&b全服邀请函&f&l]",p),
+	  gml("&6[right] &7输入&f&n/dt sendall&7即可在聊天框里发送决斗请求|&6[right] &7每次消耗1个本道具| ",p),
 	  mark2,true)
 	  .get();
 	}

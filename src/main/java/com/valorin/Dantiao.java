@@ -227,7 +227,7 @@ public class Dantiao extends JavaPlugin {
         metrics.addCustomChart(new Metrics.SingleLineChart("command_type_amount", () -> commandTypeAmountData.getAndClear()));
         
         console.sendMessage("§8[§bDantiao§8]");
-        console.sendMessage("§f>> §a单挑插件V2已成功载入服务器！");
+        console.sendMessage("§f>> §a决斗插件V2已成功载入服务器！");
         console.sendMessage("§f>> §aDantiaoV2 by:Valorin");
     }
 
@@ -242,7 +242,7 @@ public class Dantiao extends JavaPlugin {
         Bukkit.getScheduler().cancelTasks(instance);
         ConsoleCommandSender console = Bukkit.getConsoleSender();
         console.sendMessage("§8[§bDantiao§8]");
-        console.sendMessage("§f>> §7单挑插件V2已关闭");
+        console.sendMessage("§f>> §7决斗插件V2已关闭");
         console.sendMessage("§f>> §7DantiaoV2 by:Valorin");
     }
 }

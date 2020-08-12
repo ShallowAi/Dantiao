@@ -10,7 +10,6 @@ import static com.valorin.util.SyncBroadcast.bc;
 import java.util.List;
 
 import org.bukkit.Bukkit;
-import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -24,8 +23,6 @@ import com.valorin.effect.WinFirework;
 import com.valorin.energy.Energy;
 import com.valorin.event.game.CompulsoryTeleport;
 import com.valorin.task.RecordData;
-import com.valorin.teleport.ToLobby;
-import com.valorin.teleport.ToLogLocation;
 
 public class Finisher {
   public static void normalEnd(String name,String winner,String loser,boolean isDraw) {//正常结束
@@ -86,14 +83,14 @@ public class Finisher {
 	                      int danNumBefore = arena.getDan(arena.isp1(winner)).getNum();
 	                      int danNumNow = dh.getPlayerDan(winner).getNum();
 	                      if (danNumNow > danNumBefore) {
-	                          bc(gm("&a[恭喜]: &7玩家 &e{player} &7的单挑段位成功升到了&r{dan}",null,"player dan",new String[]{winner,dh.getPlayerDan(winner).getDanName()}));
+	                          bc(gm("&a[恭喜]: &7玩家 &e{player} &7的决斗段位成功升到了&r{dan}",null,"player dan",new String[]{winner,dh.getPlayerDan(winner).getDanName()}));
 	                      }
 	                      break;
 	                  }
 	              }
 	          } else {
 	               if (dh.getPlayerDan(winner) instanceof Common) {
-	                   bc(gm("&a[恭喜]: &7玩家 &e{player} &7突破了无段位的身份，首次获得了段位：&r{dan}&7！祝TA在单挑战斗的路上越走越远！",null,"player dan",new String[]{winner,dh.getPlayerDan(winner).getDanName()}));
+	                   bc(gm("&a[恭喜]: &7玩家 &e{player} &7突破了无段位的身份，首次获得了段位：&r{dan}&7！祝TA在决斗战斗的路上越走越远！",null,"player dan",new String[]{winner,dh.getPlayerDan(winner).getDanName()}));
 	               }
 	          }
 	          if (arena.getDan(arena.isp1(loser)) instanceof Common) {
@@ -103,14 +100,14 @@ public class Finisher {
 	                      int danNumBefore = arena.getDan(arena.isp1(loser)).getNum();
 	                      int danNumNow = dh.getPlayerDan(loser).getNum();
 	                      if (danNumNow > danNumBefore) {
-		                      bc(gm("&a[恭喜]: &7玩家 &e{player} &7的单挑段位成功升到了&r{dan}",null,"player dan",new String[]{winner,dh.getPlayerDan(winner).getDanName()}));
+		                      bc(gm("&a[恭喜]: &7玩家 &e{player} &7的决斗段位成功升到了&r{dan}",null,"player dan",new String[]{winner,dh.getPlayerDan(winner).getDanName()}));
 	                      }
 	                      break;
 		              }
 	              }
 	          } else {
 	              if (dh.getPlayerDan(loser) instanceof Common) {
-		               bc(gm("&a[恭喜]: &7玩家 &e{player} &7突破了无段位的身份，首次获得了段位：&r{dan}&7！祝TA在单挑战斗的路上越走越远！",null,"player dan",new String[]{loser,dh.getPlayerDan(loser).getDanName()}));
+		               bc(gm("&a[恭喜]: &7玩家 &e{player} &7突破了无段位的身份，首次获得了段位：&r{dan}&7！祝TA在决斗战斗的路上越走越远！",null,"player dan",new String[]{loser,dh.getPlayerDan(loser).getDanName()}));
 	              }
 	          }
               arena.finish();

@@ -13,7 +13,7 @@ import com.valorin.energy.Energy;
 import com.valorin.ranking.Ranking;
 
 /**
- * 单挑插件新版API
+ * 决斗插件新版API
  * @version 2.0正式版
  * @author Valorin
  * @since 2020/2/23
@@ -21,18 +21,18 @@ import com.valorin.ranking.Ranking;
 public class DantiaoAPI
 {
   /**
-   * 获取某玩家的单挑积分
+   * 获取某玩家的决斗积分
    * @param p 玩家
-   * @return 玩家的单挑积分
+   * @return 玩家的决斗积分
    */
   public static double getPlayerPoints(Player p) {
     return pd.getDouble(p.getName()+".Points");
   }
   /**
-   * 设置某玩家的单挑积分
+   * 设置某玩家的决斗积分
    * @param p 玩家
    * @param value 值
-   * @return 玩家的单挑积分
+   * @return 玩家的决斗积分
    */
   public static void setPlayerPoints(Player p,double value) {
     pd.set(p.getName()+".Points",value);
@@ -81,7 +81,6 @@ public class DantiaoAPI
   }
   /**
    * 获取设置的最大精力值
-   * @param p 玩家
    * @return >=0,实际设置的最大精力值
    * @return -1,无限能量（精力值系统被禁用时）
    */

@@ -39,7 +39,7 @@ public class Lobby extends SubCommand{
 		float yaw = (float)areas.getDouble("Dantiao-LobbyPoint.YAW");
 		float pitch = (float)areas.getDouble("Dantiao-LobbyPoint.PITCH");
 		p.teleport(new Location(Bukkit.getWorld(world),x,y,z,yaw,pitch));
-		sm("&b传送至单挑大厅...",p);
+		sm("&b传送至决斗大厅...",p);
 		return true;
 	  }
 	  if (args[1].equalsIgnoreCase("set")) {
@@ -59,7 +59,7 @@ public class Lobby extends SubCommand{
 		areas.set("Dantiao-LobbyPoint.YAW", (float)loc.getYaw());
 		areas.set("Dantiao-LobbyPoint.PITCH", (float)loc.getPitch());
 		saveAreas();
-		sm("&a[v]单挑大厅设置完毕！玩家每次决斗结束后都会自动传送回到单挑大厅",p);
+		sm("&a[v]决斗大厅设置完毕！玩家每次决斗结束后都会自动传送回到决斗大厅",p);
 		return true;
 	  }
 	  if (args[1].equalsIgnoreCase("delete")) {
@@ -68,15 +68,15 @@ public class Lobby extends SubCommand{
           return true;
         }
 		if (areas.getString("Dantiao-LobbyPoint.World") == null) {
-		  sm("&c[x]不存在单挑大厅！",p);
+		  sm("&c[x]不存在决斗大厅！",p);
 		}
 		areas.set("Dantiao-LobbyPoint", null);
 		saveAreas();
-		sm("&a[v]单挑大厅删除完毕",p);
+		sm("&a[v]决斗大厅删除完毕",p);
 		return true;
 	  }
 	  sm("",p);
-	  sm("&b/dt lobby set &f- &a设置服务器的单挑大厅传送点",p,false);
+	  sm("&b/dt lobby set &f- &a设置服务器的决斗大厅传送点",p,false);
       sm("&b/dt lobby delete &f- &a取消大厅传送点",p,false);
       sm("",p);
 	  return true;

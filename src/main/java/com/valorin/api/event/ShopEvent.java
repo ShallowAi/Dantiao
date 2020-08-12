@@ -16,7 +16,7 @@ public class ShopEvent extends Event implements Cancellable {
     private int row;
     private int column;
     /**
-	 * 玩家在单挑积分商城购物时调用（前提是有足够的积分）
+	 * 玩家在决斗积分商城购物时调用（前提是有足够的积分）
 	 * @param buyer 玩家
 	 * @param page 商品所在的页数
 	 * @param row 商品所在的行数

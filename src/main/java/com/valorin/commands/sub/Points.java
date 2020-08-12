@@ -18,7 +18,7 @@ public class Points extends SubCommand{
 
 	public void sendHelp(Player p) {
 		sm("",p);
-		sm("&3&lDan&b&l&oTiao &f&l>> &a管理员帮助：单挑积分操作",p,false);
+		sm("&3&lDan&b&l&oTiao &f&l>> &a管理员帮助：决斗积分操作",p,false);
 		sm("&b/dt points(p) add <玩家名> <数额> &f- &a为某玩家添加积分",p,false);
 		sm("&b/dt points(p) take <玩家名> <数额> &f- &a扣除某玩家的积分",p,false);
 		sm("&b/dt points(p) set <玩家名> <数额> &f- &a设定某玩家的积分",p,false);
@@ -52,7 +52,7 @@ public class Points extends SubCommand{
           return true;
         }
 		double me = pd.getDouble(p.getName()+".Points");
-		sm("&6我的单挑积分余额 [right] {amount}",p,"amount",new String[]{""+me});
+		sm("&6我的决斗积分余额 [right] {amount}",p,"amount",new String[]{""+me});
 		return true;
 	  }
 	  if (!sender.hasPermission("dt.admin")) {
@@ -113,7 +113,7 @@ public class Points extends SubCommand{
 		  return true;
 		}
 		double o = pd.getDouble(args[2]+".Points");
-		sm("&6玩家&e{player}&6的单挑积分余额 [right] {amount}",p,"player amount",new String[]{args[2],""+o});
+		sm("&6玩家&e{player}&6的决斗积分余额 [right] {amount}",p,"player amount",new String[]{args[2],""+o});
 		return true;
 	  }
 	  sendHelp(p);

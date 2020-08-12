@@ -8,7 +8,7 @@ import org.bukkit.configuration.file.YamlConfiguration;
 
 public class DataFile {
 	public static File areasFile = new File("plugins/Dantiao/areas.yml");
-	//记录区域：单挑大厅，KD全息图位置，WIN全息图位置，各个竞技场
+	//记录区域：决斗大厅，KD全息图位置，WIN全息图位置，各个竞技场
 	public static File shopFile = new File("plugins/Dantiao/shop.yml");
 	//记录积分商城中的商品
 	public static File recordsFile = new File("plugins/Dantiao/records.yml");

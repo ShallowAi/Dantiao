@@ -31,9 +31,9 @@ public class CompulsoryTeleport implements Listener {
 					  public void run() {
 						  if (areas.getString("Dantiao-LobbyPoint.World") != null) {
 						      ToLobby.to(p);
-						      sm("&b已将你带回单挑大厅！",p);
+						      sm("&b已将你带回决斗大厅！",p);
 						      if (p != null && !p.isDead()) {
-						          sm("&b已将你带回单挑大厅！",p);
+						          sm("&b已将你带回决斗大厅！",p);
 						      }
 						  } else {
 						      p.teleport(players.get(pn));

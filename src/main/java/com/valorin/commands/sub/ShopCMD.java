@@ -108,7 +108,7 @@ public class ShopCMD extends SubCommand implements InServerCommands{
 		Inventory inv = Bukkit.createInventory(null, 54, 
 					gm("&0&l积分商城 &9&l[right]",p));
 	    Shop.loadInv(p.getName(),inv);
-	    sm("&a[v]欢迎光临单挑积分商城！",p);
+	    sm("&a[v]欢迎光临决斗积分商城！",p);
 	    return true;
 	  }
 	  if (!p.hasPermission("dt.admin")) {

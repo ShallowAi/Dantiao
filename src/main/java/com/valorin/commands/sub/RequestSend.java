@@ -120,7 +120,7 @@ public class RequestSend extends SubCommand implements InServerCommands{
 	  rh.addRequest(sn, rn);
 	  Dec.sm(r, 2);
 	  r.sendMessage(Dec.getStr(4)+
-			  gm("&e收到一则单挑请求&7(来自&b{player}&7)",Bukkit.getPlayerExact(rn),"player",new String[]{sn}));
+			  gm("&e收到一则决斗请求&7(来自&b{player}&7)",Bukkit.getPlayerExact(rn),"player",new String[]{sn}));
 	  Dec.sm(r, 0);
 	  Click.sendRequest(sn,rn);
 	  Dec.sm(r, 0);

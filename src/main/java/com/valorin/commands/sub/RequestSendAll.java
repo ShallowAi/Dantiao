@@ -107,7 +107,7 @@ public class RequestSendAll extends SubCommand implements InServerCommands{
 		    }
 	  	    Dec.sm(receiver, 2);
 	  	    receiver.sendMessage(Dec.getStr(7)+
-				  gm("&e玩家&7{player}&e向全服玩家下了单挑战书",null,"player",new String[]{sn}));
+				  gm("&e玩家&7{player}&e向全服玩家下了决斗战书",null,"player",new String[]{sn}));
 	  	    Dec.sm(receiver, 0);
 	  	    receiver.spigot().sendMessage(txt);
 	  	    Dec.sm(receiver, 0);
@@ -115,6 +115,6 @@ public class RequestSendAll extends SubCommand implements InServerCommands{
 	  	    rh.addRequest(sn, rn); //发送申请
 	  	    count++;
 	    }
-	    sm("&a[v]已有{amount}个玩家收到了你的单挑请求，请等待接受",sender,"amount",new String[]{""+count});
+	    sm("&a[v]已有{amount}个玩家收到了你的决斗请求，请等待接受",sender,"amount",new String[]{""+count});
 	}
 }

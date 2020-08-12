@@ -14,7 +14,7 @@ public class MainHelp {
       if (sender instanceof Player)
       { p = (Player)sender; }
       sm("", p);
-      sender.sendMessage("§b§lDan§3§l§otiao §c§l单挑插件V2正式版§cBy-Valorin §d§l"+Dantiao.getInstance().getDescription().getVersion());
+      sender.sendMessage("§b§lDan§3§l§otiao §c§l决斗插件V2正式版§cBy-Valorin §d§l"+Dantiao.getInstance().getDescription().getVersion());
 	  sender.sendMessage("§e=============================================");
 	  sm("", p);
 	  sm("  &f&l>> &6/dt help(h) &f查看玩家帮助&a[v]",p,false);

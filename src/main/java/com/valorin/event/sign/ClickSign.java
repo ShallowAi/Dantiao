@@ -15,7 +15,7 @@ public class ClickSign implements Listener{
 	    if ((e.getClickedBlock().getState() instanceof Sign)) {
 	      Sign s = (Sign)e.getClickedBlock().getState();
 	      String content = s.getLine(0);
-		  if (content.equals("§9"+gm("[单挑匹配]",null))) {
+		  if (content.equals("§9"+gm("[决斗匹配]",null))) {
 			Bukkit.dispatchCommand(e.getPlayer(), "dt st");
 		  }
 	    }

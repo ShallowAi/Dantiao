@@ -90,7 +90,7 @@ public class HD {
         } else {
             max = winListData.size();
         }
-        winList.add(gm("&b[star1]单挑-胜场排行榜[star2]"));
+        winList.add(gm("&b[star1]决斗-胜场排行榜[star2]"));
         for (int i = 0;i < max;i++) {
         	String rankingString = getRankingString(i, winListData, true);
         	if (rankingString != null) {
@@ -105,7 +105,7 @@ public class HD {
         } else {
             max2 = KDListData.size();
         }
-        KDList.add(gm("&b[star1]单挑-KD比值排行榜[star2]"));
+        KDList.add(gm("&b[star1]决斗-KD比值排行榜[star2]"));
         for (int i = 0;i < max2;i++) {
         	String rankingString = getRankingString(i, KDListData, false);
         	if (rankingString != null) {

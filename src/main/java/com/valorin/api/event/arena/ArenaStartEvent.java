@@ -12,7 +12,7 @@ public class ArenaStartEvent extends Event{
     private Player player2;
     private Arena arena;
     /**
-	 * 玩家在单挑积分商城购物时调用（前提是有足够的积分）
+	 * 玩家在决斗积分商城购物时调用（前提是有足够的积分）
 	 * @param player1 玩家1
 	 * @param player2 玩家2
 	 * @param arena 竞技场

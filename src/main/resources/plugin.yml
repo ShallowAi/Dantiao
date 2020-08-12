@@ -5,5 +5,5 @@ author: Valorin
 softdepend: [HolographicDisplays, PlaceholderAPI, TrHologram, VexView]
 commands:
   dt:
-    description: 查看单挑插件帮助
+    description: 查看决斗插件帮助
     usage: /<command>
