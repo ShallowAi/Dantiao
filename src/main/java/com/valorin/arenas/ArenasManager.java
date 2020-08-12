@@ -118,7 +118,7 @@ public class ArenasManager {
       return false;
 	}
     
-    public boolean isPlayerBusy(String pn) {//某玩家是否在比赛
+    public boolean isPlayerBusy(String pn) {//某玩家是否在决斗
       if (arenas.size() == 0) {
     	return false;
       }

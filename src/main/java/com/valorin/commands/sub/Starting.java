@@ -44,7 +44,7 @@ public class Starting extends SubCommand implements InServerCommands{
 	    List<String> worldlist = getInstance().getConfig().getStringList("WorldLimit.Worlds");
 	    if (worldlist != null) {
 	      if (!worldlist.contains(p.getWorld().getName())) {
-	        sm("&c[x]你所在的世界已被禁止比赛",p);
+	        sm("&c[x]你所在的世界已被禁止决斗",p);
 	        return true;
 	      }
 	    }

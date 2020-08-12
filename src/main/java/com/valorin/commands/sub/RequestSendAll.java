@@ -37,7 +37,7 @@ public class RequestSendAll extends SubCommand implements InServerCommands{
 	  Player p = (Player)sender;
 	  String sn = p.getName();
 	  if (args.length == 1) {
-	    if (getInstance().getArenasHandler().isPlayerBusy(p.getName())) {//OP比赛时输入
+	    if (getInstance().getArenasHandler().isPlayerBusy(p.getName())) {//OP决斗时输入
 		  return true;
 	    }
 	    List<String> blist = blacklist.getStringList("BlackList");
@@ -98,7 +98,7 @@ public class RequestSendAll extends SubCommand implements InServerCommands{
 	  	            }
 	  	        }
 	  	    }
-	  	    if (getInstance().getArenasHandler().isPlayerBusy(rn)) {//对方正在比赛，不可以发送
+	  	    if (getInstance().getArenasHandler().isPlayerBusy(rn)) {//对方正在决斗，不可以发送
 	  	      continue;
 	  	    }
 	  	    RequestsHandler rh = getInstance().getRequestsHandler();

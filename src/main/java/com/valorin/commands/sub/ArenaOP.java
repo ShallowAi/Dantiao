@@ -162,7 +162,7 @@ public class ArenaOP extends SubCommand implements AdminCommands{
 		saveAreas();
   	    
 		getInstance().getArenasHandler().addArena(args[2]);
-		sm("&a[v]创建完成！现在玩家可以进入这个竞技场比赛了！现在你可以选择输入/dt a mode退出创建模式，也可以继续进行创建操作！",p);
+		sm("&a[v]创建完成！现在玩家可以进入这个竞技场决斗了！现在你可以选择输入/dt a mode退出创建模式，也可以继续进行创建操作！",p);
 		return true;
 	  }
 	  if (args[1].equalsIgnoreCase("sw")) {

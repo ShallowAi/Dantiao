@@ -10,7 +10,7 @@ public class ArenaFinishEvent extends ArenaEventAbs{
   private Player loser;
   private Arena arena;
   /**
-   * 某场比赛在非平局情况下结束时触发，不包括管理员强行结束的情况
+   * 某场决斗在非平局情况下结束时触发，不包括管理员强行结束的情况
    * @param winner 胜利的玩家
    * @param loser 战败的玩家
    * @param arena 所在的竞技场

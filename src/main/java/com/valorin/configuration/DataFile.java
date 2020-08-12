@@ -12,7 +12,7 @@ public class DataFile {
 	public static File shopFile = new File("plugins/Dantiao/shop.yml");
 	//记录积分商城中的商品
 	public static File recordsFile = new File("plugins/Dantiao/records.yml");
-	//玩家的比赛记录
+	//玩家的决斗记录
 	public static File pdFile = new File("plugins/Dantiao/playersdata.yml");
 	//玩家数据，记录玩家积分，所用的语言文件
 	public static File blacklistFile = new File("plugins/Dantiao/blacklist.yml");

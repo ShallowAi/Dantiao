@@ -28,7 +28,7 @@ public class WatchGame extends SubCommand implements InServerCommands{
 		sm("&7正确用法：/dt watch <竞技场名称>",p);
 		return true;
 	  }
-	  if (getInstance().getArenasHandler().isPlayerBusy(p.getName())) {//OP比赛时输入
+	  if (getInstance().getArenasHandler().isPlayerBusy(p.getName())) {//OP决斗时输入
 		return true;
 	  }
 	  String arenaName = args[1];
@@ -47,7 +47,7 @@ public class WatchGame extends SubCommand implements InServerCommands{
 		  sm("&c[x]这个竞技场不允许观战！",p);
 		}
 	  } else {
-		sm("&c[x]这个竞技场还未开始比赛，无法观战！",p);
+		sm("&c[x]这个竞技场还未开始决斗，无法观战！",p);
 	  }
 	  return true;
 	}

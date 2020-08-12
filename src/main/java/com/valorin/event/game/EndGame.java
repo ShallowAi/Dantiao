@@ -20,7 +20,7 @@ import com.valorin.arenas.ArenasManager;
 import com.valorin.arenas.Finisher;
 
 public class EndGame implements Listener {
-	// 限制模式：一方选手血量低于50%，无论因素，判定“非平局结束比赛”
+	// 限制模式：一方选手血量低于50%，无论因素，判定“非平局结束决斗”
 	@EventHandler(priority=EventPriority.HIGHEST)
 	public void onDTDmgHalf(EntityDamageEvent e) {
 		// 判断是否为该模式
@@ -30,7 +30,7 @@ public class EndGame implements Listener {
 				if (p.getHealth() <= p.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue() / 2) {
 					String pn = p.getName();
 					ArenasManager ah = Dantiao.getInstance().getArenasHandler();
-					if (ah.isPlayerBusy(pn)) { //属于比赛玩家，对方取胜
+					if (ah.isPlayerBusy(pn)) { //属于决斗玩家，对方取胜
 						String an = ah.getPlayerOfArena(pn);
 						Arena a = ah.getArena(an);
 						String winner = a.getTheOtherPlayer(pn);
@@ -40,7 +40,7 @@ public class EndGame implements Listener {
 			}
 	}
 /*
-	// 一击决胜模式：一方选手被击中，无论因素，判定“非平局结束比赛”
+	// 一击决胜模式：一方选手被击中，无论因素，判定“非平局结束决斗”
 	@EventHandler(priority=EventPriority.HIGHEST)
 	public void onDTDmg(EntityDamageEvent e) {
 		// 判断是否为该模式
@@ -49,7 +49,7 @@ public class EndGame implements Listener {
 				Player p = (Player) e.getEntity();
 				String pn = p.getName();
 				ArenasManager ah = Dantiao.getInstance().getArenasHandler();
-				if (ah.isPlayerBusy(pn)) { //属于比赛玩家，对方取胜
+				if (ah.isPlayerBusy(pn)) { //属于决斗玩家，对方取胜
 					String an = ah.getPlayerOfArena(pn);
 					Arena a = ah.getArena(an);
 					String winner = a.getTheOtherPlayer(pn);
@@ -59,13 +59,13 @@ public class EndGame implements Listener {
 	}
 	
  */
-	// 普通模式：一方选手死亡，无论因素，判定“非平局结束比赛”
+	// 普通模式：一方选手死亡，无论因素，判定“非平局结束决斗”
 	@EventHandler(priority=EventPriority.HIGHEST)
     public void onDTDeath(PlayerDeathEvent e) {
 	  Player p = e.getEntity();
 	  String pn = p.getName();
 	  ArenasManager ah = Dantiao.getInstance().getArenasHandler();
-	  if (ah.isPlayerBusy(pn)) {//属于比赛玩家，对方取胜
+	  if (ah.isPlayerBusy(pn)) {//属于决斗玩家，对方取胜
 		String an = ah.getPlayerOfArena(pn);
 		Arena a = ah.getArena(an);
 		String winner = a.getTheOtherPlayer(pn);
@@ -73,13 +73,13 @@ public class EndGame implements Listener {
 	  }
     }
 
-	// 一方玩家下线，无论因素，判定“非平局结束比赛”
+	// 一方玩家下线，无论因素，判定“非平局结束决斗”
 	@EventHandler
     public void onDTLeaveGame(PlayerQuitEvent e) {
 	  Player p = e.getPlayer();
 	  String pn = p.getName();
 	  ArenasManager ah = Dantiao.getInstance().getArenasHandler();
-	  if (ah.isPlayerBusy(pn)) {//属于比赛玩家，对方取胜
+	  if (ah.isPlayerBusy(pn)) {//属于决斗玩家，对方取胜
 		String an = ah.getPlayerOfArena(pn);
 		Arena a = ah.getArena(an);
 		String winner = a.getTheOtherPlayer(pn);

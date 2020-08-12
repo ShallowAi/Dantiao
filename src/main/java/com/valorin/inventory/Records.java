@@ -20,7 +20,7 @@ public class Records{
   public static void openInv(String openerName) {
 	Player opener = Bukkit.getPlayerExact(openerName);
 	Inventory inv = Bukkit.createInventory(null, 54, 
-			gm("&0&l我的比赛记录 &9&l[right]",opener));
+			gm("&0&l我的决斗记录 &9&l[right]",opener));
 	
 	int[] glass = {0,1,2,3,4,5,6,7,8,45,46,47,48,50,51,52,53};
     for (int i : glass) {

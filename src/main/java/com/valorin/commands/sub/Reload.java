@@ -37,7 +37,7 @@ public class Reload extends SubCommand implements AdminCommands{
 		return true;
 	  }
 	  if (p != null) {
-	    if (getInstance().getArenasHandler().isPlayerBusy(p.getName())) {//OP比赛时输入
+	    if (getInstance().getArenasHandler().isPlayerBusy(p.getName())) {//OP决斗时输入
 		  return true;
 	    }
 	  }

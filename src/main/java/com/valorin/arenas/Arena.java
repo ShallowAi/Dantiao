@@ -84,7 +84,7 @@ public class Arena {
 	stage = 0;
 	Player player1 = Bukkit.getPlayerExact(p1);
 	Player player2 = Bukkit.getPlayerExact(p2);
-	sm("&7比赛即将开始..",player1,player2);
+	sm("&7决斗即将开始..",player1,player2);
 	timer = new BukkitRunnable() {
 	  @Override
 	  public void run() {
@@ -94,33 +94,33 @@ public class Arena {
 		if (time >= 0) {
 		  if (time == 0) {
 		  	stage = 1; //阶段变更：战前准备->战斗状态
-		  	sm("&a比赛开始！！亮剑吧！",player1,player2);
+		  	sm("&a决斗开始！！亮剑吧！",player1,player2);
 		  	ArenaCommands.ExecuteArenaCommands(name, player1, player2);
 		  }
 		  if (time == 60) {
-		  	sm("&7比赛已进行一分钟..",player1,player2);
+		  	sm("&7决斗已进行一分钟..",player1,player2);
 		  }
 		  if (time == 120) {
-		  	sm("&7比赛已进行两分钟..",player1,player2);
+		  	sm("&7决斗已进行两分钟..",player1,player2);
 		  }
 		  if (time == 180) {
-		  	sm("&7比赛已进行三分钟！达到五分钟时仍为决出胜负则将判定为平局！",player1,player2);
+		  	sm("&7决斗已进行三分钟！达到五分钟时仍为决出胜负则将判定为平局！",player1,player2);
 		  }
 		  if (time == 240) {
-		  	sm("&7比赛已进行四分钟！达到五分钟时仍为决出胜负则将判定为平局！请抓紧时间",player1,player2);
+		  	sm("&7决斗已进行四分钟！达到五分钟时仍为决出胜负则将判定为平局！请抓紧时间",player1,player2);
 		  }
 		  if (time == 300) {
 		  	Finisher.normalEnd(name, p1, p2, true);
 		  }
 		} else {
-		  sm("&7比赛开始倒计时 &b{time}s",player1,"time",new String[]{""+(0-time)});
-		  sm("&7比赛开始倒计时 &b{time}s",player2,"time",new String[]{""+(0-time)});
+		  sm("&7决斗开始倒计时 &b{time}s",player1,"time",new String[]{""+(0-time)});
+		  sm("&7决斗开始倒计时 &b{time}s",player2,"time",new String[]{""+(0-time)});
 		}
 	  }
     }.runTaskTimerAsynchronously(Dantiao.getInstance(), 20, 20);
   }
   
-  public void finish() {//结束这个竞技场的比赛
+  public void finish() {//结束这个竞技场的决斗
 	timer.cancel();
 	enable = false;
 	p1 = null;

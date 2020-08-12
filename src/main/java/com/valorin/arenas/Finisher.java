@@ -46,13 +46,6 @@ public class Finisher {
 			if (l.isDead()) { l.spigot().respawn(); }
 		  } catch (Exception e) { CompulsoryTeleport.players.put(loser, arena.getLoaction(arena.isp1(loser))); }
       }
-	
-	  w.setHealth(w.getMaxHealth());
-	  w.setFoodLevel(20);
-	  if (l != null && !l.isDead()) {
-          l.setHealth(l.getMaxHealth());
-          l.setFoodLevel(20);
-	  }
 	  Energy e = getInstance().getEnergy();
 	  if (e.getEnable()) {
 	      e.setEnergy(winner, e.getEnergy(winner) - e.getNeed());
@@ -61,33 +54,9 @@ public class Finisher {
 
 	  arena.setCanTeleport(true);
 	  arena.setWatchersTeleport(true);
-	  List<String> watchers = arena.getWatchers();
-	  if (areas.getString("Dantiao-LobbyPoint.World") != null) {
-          ToLobby.to(w);
-	      ToLobby.to(l);
-	      sm("&b已将你带回单挑大厅！",w);
-	      if (l != null) {
-	          sm("&b已将你带回单挑大厅！",l);
-	      }
-	      for (String watcher : watchers) {
-		      if (Bukkit.getPlayerExact(watcher) != null) {
-		          ToLobby.to(Bukkit.getPlayerExact(watcher));
-		          sm("&b已将你带回单挑大厅！",l);
-		      }
-	      }
-	  } else {
-	      Location winnerLocation = arena.getLoaction(arena.isp1(w.getName()));
-	      Location loserLocation = arena.getLoaction(arena.isp1(l.getName()));
-	      ToLogLocation.to(w,l,winnerLocation,loserLocation);
-	      for (String watcher : watchers) {
-		      if (Bukkit.getPlayerExact(watcher) != null) {
-		          sm("&b[报告] &7你所观战的竞技场上的比赛已结束，请自行传送回家...",Bukkit.getPlayerExact(watcher),false);
-		      }
-	      }
-	  }//回到原处
 	  if (getInstance().getConfig().getBoolean("Rewards.Firework")) {
 	      WinFirework.setFirework(w.getLocation());
-	      sm("&a[v]WOW！服务器专门为你的获胜放了一朵烟花~",w);
+	      sm("&a[v]WOW！服务器为你的获胜放了一朵烟花~",w);
 	  }
 
 	  busyArenasName.remove(arena.getName());
@@ -154,41 +123,16 @@ public class Finisher {
 	if (arena == null) { 
 		sm("&c[x]不存在的竞技场，请检查输入",finisher); return;}
 	if (!arena.getEnable()) { 
-		sm("&c[x]这个竞技场还没有比赛呢！",finisher); return;}
+		sm("&c[x]这个竞技场还没有决斗呢！",finisher); return;}
 	
 	Player p1 = Bukkit.getPlayerExact(arena.getp1());
 	Player p2 = Bukkit.getPlayerExact(arena.getp2());
 	
 	arena.setWatchersTeleport(true);
 	List<String> watchers = arena.getWatchers();
-	if (areas.getString("Dantiao-LobbyPoint.World") != null) {
-	  if (p1 != null) {
-        ToLobby.to(p1);
-	    sm("&b已将你带回单挑大厅！",p1);
-	  }
-	  if (p2 != null) {
-		ToLobby.to(p2);
-	    sm("&b已将你带回单挑大厅！",p2);
-	  }
-	  for (String watcher : watchers) {
-		if (Bukkit.getPlayerExact(watcher) != null) {
-		  ToLobby.to(Bukkit.getPlayerExact(watcher));
-		  sm("&b已将你带回单挑大厅！",p2);
-		}
-	  }
-	} else {
-	  Location winnerLocation = arena.getLoaction(arena.isp1(p1.getName()));
-	  Location loserLocation = arena.getLoaction(arena.isp1(p2.getName()));
-	  ToLogLocation.to(p1,p2,winnerLocation,loserLocation);
-	  for (String watcher : watchers) {
-		if (Bukkit.getPlayerExact(watcher) != null) {
-		  sm("&b[报告] &7你所观战的竞技场上的比赛已结束，请自行传送回家...",Bukkit.getPlayerExact(watcher));
-		}
-	  }
-	}//回到原处
 	
 	arena.finish();
-	sm("&b&l比赛被管理员强制结束！本局比赛不会被记录！",p1,p2);
+	sm("&b&l决斗被管理员强制结束！本局决斗不会被记录！",p1,p2);
 	sm("&a[v]已强制停止",finisher);
 	busyArenasName.remove(arena.getName());
   }

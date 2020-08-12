@@ -59,7 +59,7 @@ public class Lobby extends SubCommand{
 		areas.set("Dantiao-LobbyPoint.YAW", (float)loc.getYaw());
 		areas.set("Dantiao-LobbyPoint.PITCH", (float)loc.getPitch());
 		saveAreas();
-		sm("&a[v]单挑大厅设置完毕！玩家每次比赛结束后都会自动传送回到单挑大厅",p);
+		sm("&a[v]单挑大厅设置完毕！玩家每次决斗结束后都会自动传送回到单挑大厅",p);
 		return true;
 	  }
 	  if (args[1].equalsIgnoreCase("delete")) {

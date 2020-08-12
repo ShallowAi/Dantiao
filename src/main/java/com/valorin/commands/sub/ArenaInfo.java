@@ -39,7 +39,7 @@ public class ArenaInfo extends SubCommand{
 		String state;
 		if (ArenasManager.busyArenasName.contains(arenaEditName))
 		{
-		  state = gm("&c正在比赛中...",p);
+		  state = gm("&c正在决斗中...",p);
 		} else {
 		  state = gm("&a空闲",p);
 		}

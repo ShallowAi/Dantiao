@@ -22,7 +22,14 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d611c1ee-9ce7-42c2-9a28-ec5ed79df3ed" name="默认的" comment="pom添加本地依赖-注释 如果无法下jar请去掉注释&#10;添加过滤文件 提交过滤无关文件&#10;过滤jar防止把依赖提交上去" />
+    <list default="true" id="d611c1ee-9ce7-42c2-9a28-ec5ed79df3ed" name="默认的" comment="删除了决斗开始时重置血量饱食度和模式的代码">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dantiao.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Dantiao.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/Finisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/Finisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/Starter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/valorin/arenas/Starter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/valorin/event/game/EndGame.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/valorin/event/game/EndGame.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,12 +39,18 @@
     <option name="done" value="true" />
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="GlowingBedrock" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="SIGN_OFF_COMMIT" value="true" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:\JetBrains\IntelliJ IDEA 2020.1.4\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="E:\IntelliJ IDEA Community Edition 2020.2\plugins\maven\lib\maven3" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -45,9 +58,6 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1flWec0hvhDL58Fr9NiTD6GZoYL" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -100,7 +110,14 @@
       <option name="project" value="LOCAL" />
       <updated>1596805457044</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="删除了决斗开始时重置血量饱食度和模式的代码">
+      <created>1597154050657</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1597154050657</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -116,19 +133,41 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="pom添加本地依赖-注释 如果无法下jar请去掉注释&#10;添加过滤文件 提交过滤无关文件&#10;过滤jar防止把依赖提交上去" />
-    <option name="LAST_COMMIT_MESSAGE" value="pom添加本地依赖-注释 如果无法下jar请去掉注释&#10;添加过滤文件 提交过滤无关文件&#10;过滤jar防止把依赖提交上去" />
+    <MESSAGE value="删除了决斗开始时重置血量饱食度和模式的代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除了决斗开始时重置血量饱食度和模式的代码" />
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#项目结构" timestamp="1596793545580">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="249" y="0" key="#项目结构/0.0.1536.824@0.0.1536.824" timestamp="1596793545580" />
+    <state x="378" y="0" width="726" height="727" key="CommitChangelistDialog2" timestamp="1597154048586">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="0" width="726" height="727" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1597154048586" />
+    <state x="263" y="98" key="IDE.errors.dialog" timestamp="1597204590066">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="263" y="98" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1597204590066" />
     <state x="270" y="57" key="SettingsEditor" timestamp="1596796730547">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1596796730547" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1597154781488">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1597154781488" />
+    <state x="496" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1597138231346">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="496" y="277" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1597138231346" />
+    <state x="378" y="109" key="refactoring.ChangeSignatureDialog" timestamp="1597151747081">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="378" y="109" key="refactoring.ChangeSignatureDialog/0.0.1366.728@0.0.1366.728" timestamp="1597151747081" />
   </component>
 </project>

@@ -24,8 +24,8 @@ public class Protection implements Listener {
 		Player p = (Player)e.getEntity(); //确定受击者
 		String pn = p.getName(); 
 		ArenasManager ah = Dantiao.getInstance().getArenasHandler();
-		if (!ah.isPlayerBusy(pn)) { //如果这个受击者不是正在比赛的玩家，那就看看攻击者是不是比赛中的选手
-		  if (ah.isPlayerBusy(((Player)e.getDamager()).getName())) { //是比赛选手，设置禁止伤害场外玩家
+		if (!ah.isPlayerBusy(pn)) { //如果这个受击者不是正在决斗的玩家，那就看看攻击者是不是决斗中的选手
+		  if (ah.isPlayerBusy(((Player)e.getDamager()).getName())) { //是决斗选手，设置禁止伤害场外玩家
 			e.setCancelled(true);
 		  }
 		} else {
@@ -39,7 +39,7 @@ public class Protection implements Listener {
 			  e.setCancelled(true);
 		    }
 		  } else { //攻击者不是自己的对手，是别人的对手
-		    sm("&c[x]请勿干扰他人比赛！",attacker);
+		    sm("&c[x]请勿干扰他人决斗！",attacker);
 		    e.setCancelled(true);
 		  }
 		}
@@ -77,7 +77,7 @@ public class Protection implements Listener {
 		  return;
 		}
 		ArenasManager ah = Dantiao.getInstance().getArenasHandler();
-		if (!ah.isPlayerBusy(bearer)) { //受击者是比赛场上的选手
+		if (!ah.isPlayerBusy(bearer)) { //受击者是决斗场上的选手
 		  if (shooter != null) { //人为发射，只判定这个
 			Player shooterPlayer = (Player)shooter;
 			String shooterPlayerName = shooterPlayer.getName();
@@ -100,7 +100,7 @@ public class Protection implements Listener {
 			  }
 		    } else { //如果发射者不是自己的对手，那取消事件
 			  if (!shooterPlayer.getName().equals(bearer)) { //误伤自己也算
-			    sm("&c[x]请勿干扰他人比赛！",shooterPlayer);
+			    sm("&c[x]请勿干扰他人决斗！",shooterPlayer);
 			    e.setCancelled(true);
 			  }
 		    }
@@ -133,7 +133,7 @@ public class Protection implements Listener {
 	  Player p = (Player)e.getEntity();  //确认受击者
 	  String pn = p.getName();
 	  ArenasManager ah = Dantiao.getInstance().getArenasHandler();
-	  if (ah.isPlayerBusy(pn)) { //受击者为比赛选手玩家
+	  if (ah.isPlayerBusy(pn)) { //受击者为决斗选手玩家
 		e.setCancelled(true);
 	  }
 	}

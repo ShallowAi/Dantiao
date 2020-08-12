@@ -35,7 +35,7 @@ public class RequestSend extends SubCommand implements InServerCommands{
 		sm("&7正确用法：/dt send <玩家名>",p);
 		return true;
 	  }
-	  if (getInstance().getArenasHandler().isPlayerBusy(p.getName())) {//OP比赛时输入
+	  if (getInstance().getArenasHandler().isPlayerBusy(p.getName())) {//OP决斗时输入
 		return true;
 	  }
 	  String rn = args[1];
@@ -81,11 +81,11 @@ public class RequestSend extends SubCommand implements InServerCommands{
 	    List<String> worldlist = getInstance().getConfig().getStringList("WorldLimit.Worlds");
 	    if (worldlist != null) {
 	      if (!worldlist.contains(p.getWorld().getName())) {
-	        sm("&c[x]你所在的世界已被禁止比赛",p);
+	        sm("&c[x]你所在的世界已被禁止决斗",p);
 	        return true;
 	      }
 	      if (!worldlist.contains(Bukkit.getPlayerExact(rn).getWorld().getName())) {
-	        sm("&c[x]对方所处世界已被禁止比赛",p);
+	        sm("&c[x]对方所处世界已被禁止决斗",p);
 	        return true;
 	      }
 	    }
@@ -103,7 +103,7 @@ public class RequestSend extends SubCommand implements InServerCommands{
 	    }
 	  }
 	  if (getInstance().getArenasHandler().isPlayerBusy(rn)) {
-		sm("&c[x]对方正在比赛！请等一下再向他发送请求",p);
+		sm("&c[x]对方正在决斗！请等一下再向他发送请求",p);
 		return true;
 	  }
 	  RequestsHandler rh = getInstance().getRequestsHandler();

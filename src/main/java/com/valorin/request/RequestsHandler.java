@@ -107,7 +107,7 @@ public class RequestsHandler {
     	removeRequest(sn,pn);
     	if (cause == 0) {
     	  if (!sn.equals(opponentName)) {
-    	    sm("&7玩家 &f{player} &7开始了别的比赛，之前未处理的请求已取消...",Bukkit.getPlayerExact(sn),"player",new String[]{pn});
+    	    sm("&7玩家 &f{player} &7开始了别的决斗，之前未处理的请求已取消...",Bukkit.getPlayerExact(sn),"player",new String[]{pn});
     	  }
     	}
     	if (cause == 1)
@@ -117,7 +117,7 @@ public class RequestsHandler {
     	removeRequest(pn,rn);
     	if (cause == 0) {
     	  if (!rn.equals(opponentName)) {
-    		sm("&7之前向你发送单挑请求的玩家 &f{player} &7开始了别的比赛，请忽视之前的请求...",Bukkit.getPlayerExact(rn),"player",new String[]{pn});
+    		sm("&7之前向你发送单挑请求的玩家 &f{player} &7开始了别的决斗，请忽视之前的请求...",Bukkit.getPlayerExact(rn),"player",new String[]{pn});
     	  }
     	}
         if (cause == 1)

@@ -32,7 +32,7 @@ public class Quit extends SubCommand implements InServerCommands{
 		sm("&b对方向你认输了！",theother);
 		Finisher.normalEnd(arenaname, getInstance().getArenasHandler().getTheOtherPlayer(p.getName()), p.getName(), false);
 	  } else {
-		sm("&c[x]你现在不在任何一场比赛中",p);
+		sm("&c[x]你现在不在任何一场决斗中",p);
 	  }
 	  return true;
 	}

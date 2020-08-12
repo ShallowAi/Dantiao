@@ -33,7 +33,7 @@ public class RecordsGUI implements Listener {
 		return;
 	  }
 	  if (e.getView().getTitle().equals(
-			  gm("&0&l我的比赛记录 &9&l[right]",p)))
+			  gm("&0&l我的决斗记录 &9&l[right]",p)))
 	  {
 		e.setCancelled(true);
 		if (e.getRawSlot() == 49) {//翻页

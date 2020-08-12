@@ -10,7 +10,7 @@ public class ArenaDrawFinishEvent extends ArenaEventAbs{
   private Player player2;
   private Arena arena;
   /**
-   * 某场比赛在平局情况下结束时触发，不包括管理员强行结束的情况
+   * 某场决斗在平局情况下结束时触发，不包括管理员强行结束的情况
    * @param player1 玩家1
    * @param player2 玩家2
    * @param arena 所在的竞技场

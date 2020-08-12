@@ -22,7 +22,7 @@ public class TypeCommands implements Listener {
 		if (!e.getMessage().equals("/dt quit") && !(e.getMessage().equals("/dt q"))) {
 		  if (!p.isOp()) {
 		    e.setCancelled(true);
-		    sm("&c[x]比赛时禁用指令！",p);
+		    sm("&c[x]决斗时禁用指令！",p);
 		  }
 		} else {
 		  if (arena.getStage() == 0)
