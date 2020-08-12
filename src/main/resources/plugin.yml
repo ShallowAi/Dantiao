@@ -2,7 +2,7 @@ name: Dantiao
 main: com.valorin.Dantiao
 version: 2.1.5
 author: Valorin
-softdepend: [HolographicDisplays, PlaceholderAPI, TrHologram]
+softdepend: [HolographicDisplays, PlaceholderAPI, TrHologram, VexView]
 commands:
   dt:
     description: 查看单挑插件帮助

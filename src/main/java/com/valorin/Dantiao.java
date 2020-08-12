@@ -1,5 +1,6 @@
 package com.valorin;
 
+import lk.vexview.api.VexViewAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.command.ConsoleCommandSender;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -210,6 +211,14 @@ public class Dantiao extends JavaPlugin {
       		console.sendMessage("§f>> §c未发现PlaceholderAPI变量插件，将无法使用PAPI的相关功能，若您刚安装，请尝试重启服务器");
       		console.sendMessage("§f>> §cPlugin PlaceholderAPI is not found!");
       	}
+        if (Bukkit.getPluginManager().isPluginEnabled("VexView")) {
+            console.sendMessage("§8[§bDantiao§8]");
+            console.sendMessage("发现 VexView 前置, 版本"+ VexViewAPI.getVexView().getVersion());
+        } else {
+            console.sendMessage("§8[§bDantiao§8]");
+            console.sendMessage("§f>> §c未发现VexView插件，将无法使用VexView的相关功能，若您刚安装，请尝试重启服务器");
+            console.sendMessage("§f>> §cPlugin VexView is not found!");
+        }
         
         new VersionChecker().runTaskLaterAsynchronously(instance, 200L);
         
