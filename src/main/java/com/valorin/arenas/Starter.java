@@ -8,6 +8,11 @@ import static com.valorin.configuration.languagefile.MessageSender.sm;
 import java.util.List;
 import java.util.Random;
 
+import lk.vexview.api.VexViewAPI;
+import lk.vexview.tag.TagDirection;
+import lk.vexview.tag.components.VexImageTag;
+import lk.vexview.tag.components.VexTextTag;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
@@ -17,6 +22,7 @@ import com.valorin.api.event.arena.ArenaStartEvent;
 import com.valorin.request.RequestsHandler;
 import com.valorin.util.ItemChecker;
 import com.valorin.dan.DansHandler;
+import org.bukkit.scheduler.BukkitRunnable;
 
 public class Starter {
   
@@ -157,7 +163,43 @@ public class Starter {
 	
 	arena.start(pn1, pn2);
 	busyArenasName.add(arenaName);
-	
+
+	// VexView 决斗开场TAG动画
+	// Tag 方向
+	TagDirection td = new TagDirection(0, 0, 0, true, false);
+	double x_pos = (getArenasPointA(arenaName).getX() + getArenasPointB(arenaName).getX()) / 2;
+	double y_pos = (getArenasPointA(arenaName).getY() + getArenasPointB(arenaName).getY()) / 2;
+	double z_pos = (getArenasPointA(arenaName).getZ() + getArenasPointB(arenaName).getZ()) / 2;
+	// DUEL 文本
+	VexTextTag duel_text = new VexTextTag(arenaName + "text", x_pos, y_pos, z_pos, "DUEL", false, td);
+	VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_text);
+	// 左 用户 框
+	VexImageTag duel_left = new VexImageTag(arenaName + "left", x_pos - 3, y_pos - 5, z_pos, "[local]duel_l.png", 2625, 774, 4, 1, td);
+	VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_left);
+	// 左 用户 ID
+	VexTextTag duel_left_uid = new VexTextTag(arenaName + "left_uid", x_pos - 3, y_pos - 5, z_pos, p1.getName(), false, td);
+	VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_left_uid);
+	// 中 VS 分界
+	VexImageTag duel_vs = new VexImageTag(arenaName + "vs", x_pos, y_pos - 5, z_pos, "[local]VS2.0.png", 585, 396, 2, 1, td);
+	VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_vs);
+	// 右 用户 框
+	VexImageTag duel_right = new VexImageTag(arenaName + "right", x_pos, y_pos - 5, z_pos, "[local]duel_r.png", 2625, 774, 4, 1, td);
+	VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_right);
+	// 右 用户 ID
+	VexTextTag duel_right_uid = new VexTextTag(arenaName + "right_uid", x_pos, y_pos - 5, z_pos, p2.getName(), false, td);
+	VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_right_uid);
+	// 计时 删除
+	new BukkitRunnable(){
+		  public void run() {
+		  	VexViewAPI.removeWorldTag(arena.getLoaction(true).getWorld(), arena.getName()+"text");
+			VexViewAPI.removeWorldTag(arena.getLoaction(true).getWorld(), arena.getName()+"left");
+			VexViewAPI.removeWorldTag(arena.getLoaction(true).getWorld(), arena.getName()+"left_uid");
+			VexViewAPI.removeWorldTag(arena.getLoaction(true).getWorld(), arena.getName()+"vs");
+			VexViewAPI.removeWorldTag(arena.getLoaction(true).getWorld(), arena.getName()+"right");
+			VexViewAPI.removeWorldTag(arena.getLoaction(true).getWorld(), arena.getName()+"right_uid");
+		  }
+	}.runTaskLaterAsynchronously(getInstance(),100);
+
 	RequestsHandler rh = getInstance().getRequestsHandler();
 	rh.clearRequests(pn1,0,pn2);
 	rh.clearRequests(pn2,0,pn1);

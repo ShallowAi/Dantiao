@@ -2,13 +2,13 @@ package com.valorin.arenas;
 
 import static com.valorin.Dantiao.getInstance;
 import static com.valorin.arenas.ArenasManager.busyArenasName;
-import static com.valorin.configuration.DataFile.areas;
 import static com.valorin.configuration.languagefile.MessageSender.gm;
 import static com.valorin.configuration.languagefile.MessageSender.sm;
 import static com.valorin.util.SyncBroadcast.bc;
 
 import java.util.List;
 
+import lk.vexview.api.VexViewAPI;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
