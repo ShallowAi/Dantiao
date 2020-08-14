@@ -83,5 +83,12 @@
           <artifactId>TrHologram</artifactId>
           <version>1.11</version>
         </dependency> -->
+        <dependency>
+            <groupId>lk.vexview</groupId>
+            <artifactId>VexView</artifactId>
+            <version>2.6.10</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}\lib\VexView-2.6.10.jar</systemPath>
+        </dependency>
     </dependencies>
 </project>
