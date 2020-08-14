@@ -106,28 +106,29 @@ public class Starter {
 	  }
 	}
 
-	  Location pointA = p1.getLocation(),pointB = p2.getLocation();
-	  String pn1 = p1.getName(), pn2 = p2.getName();
-	  arenaName = pn1+"_"+pn2;
+	Location pointA = p1.getLocation(),pointB = p2.getLocation();
+	String pn1 = p1.getName(), pn2 = p2.getName();
+	arenaName = pn1+"_"+pn2;
 
-	  areas.set("Arenas."+arenaName+".A.World", pointA.getWorld().getName());
-	  areas.set("Arenas."+arenaName+".A.X", pointA.getX());
-	  areas.set("Arenas."+arenaName+".A.Y", pointA.getY());
-	  areas.set("Arenas."+arenaName+".A.Z", pointA.getZ());
-	  areas.set("Arenas."+arenaName+".A.YAW", (float)pointA.getYaw());
-	  areas.set("Arenas."+arenaName+".A.PITCH", (float)pointA.getPitch());
+	areas.set("Arenas."+arenaName+".A.World", pointA.getWorld().getName());
+	areas.set("Arenas."+arenaName+".A.X", pointA.getX());
+	areas.set("Arenas."+arenaName+".A.Y", pointA.getY());
+	areas.set("Arenas."+arenaName+".A.Z", pointA.getZ());
+	areas.set("Arenas."+arenaName+".A.YAW", (float)pointA.getYaw());
+	areas.set("Arenas."+arenaName+".A.PITCH", (float)pointA.getPitch());
 
-	  areas.set("Arenas."+arenaName+".B.World", pointB.getWorld().getName());
-	  areas.set("Arenas."+arenaName+".B.X", pointB.getX());
-	  areas.set("Arenas."+arenaName+".B.Y", pointB.getY());
-	  areas.set("Arenas."+arenaName+".B.Z", pointB.getZ());
-	  areas.set("Arenas."+arenaName+".B.YAW", (float)pointB.getYaw());
-	  areas.set("Arenas."+arenaName+".B.PITCH", (float)pointB.getPitch());
+	areas.set("Arenas."+arenaName+".B.World", pointB.getWorld().getName());
+	areas.set("Arenas."+arenaName+".B.X", pointB.getX());
+	areas.set("Arenas."+arenaName+".B.Y", pointB.getY());
+	areas.set("Arenas."+arenaName+".B.Z", pointB.getZ());
+	areas.set("Arenas."+arenaName+".B.YAW", (float)pointB.getYaw());
+	areas.set("Arenas."+arenaName+".B.PITCH", (float)pointB.getPitch());
+	areas.set("Arenas."+arenaName+".Name", arenaName);
 
-	  areas.set("Arenas."+arenaName+".Name", arenaName);
-
+	getInstance().getArenasHandler().addArena(arenaName);
 	Arena arena = getInstance().getArenasHandler().getArena(arenaName);
-	if (arena == null) { 
+
+	if (arena == null) {
 	  sm("&c[x]警告：开赛时发生异常，请联系管理员",p1,p2);
 	  p1.closeInventory();
 	  p2.closeInventory();
@@ -135,8 +136,6 @@ public class Starter {
 	}
 	
 	ArenaStartEvent event = new ArenaStartEvent(p1, p2, arena);
-	
-	arenaName = arena.getName();
 	
 	arena.setLocation(p1, p2);
 	
@@ -156,7 +155,6 @@ public class Starter {
 	}
 	
 	arena.start(pn1, pn2);
-	busyArenasName.add(arenaName);
 	
 	RequestsHandler rh = getInstance().getRequestsHandler();
 	rh.clearRequests(pn1,0,pn2);

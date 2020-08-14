@@ -37,8 +37,8 @@ public class Arena {
    * 玩家2原来的段位
    */
   private String name;
-  private String p1;
-  private String p2;
+  private String pn1;
+  private String pn2;
   private List<String> watchers;
   
   private boolean enable = false;
@@ -73,48 +73,48 @@ public class Arena {
 	this.name = name;
   }
   
-  public void start(String p1,String p2) {//加载 
-	this.p1 = p1;
-	this.p2 = p2;
+  public void start(String pn1,String pn2) {//加载
+	this.pn1 = pn1;
+	this.pn2 = pn2;
 	watchers = new ArrayList<String>();
 	canTeleport = false;
 	watchersTeleport = false;
 	enable = true;
 	time = getCountDown();
-	stage = 0;
-	Player player1 = Bukkit.getPlayerExact(p1);
-	Player player2 = Bukkit.getPlayerExact(p2);
-	sm("&7决斗即将开始..",player1,player2);
+	stage = 0; //阶段标志变量
+	Player p1 = Bukkit.getPlayerExact(pn1);
+	Player p2 = Bukkit.getPlayerExact(pn2);
+	sm("&7决斗即将开始..",p1,p2);
 	timer = new BukkitRunnable() {
 	  @Override
 	  public void run() {
-		Player player1 = Bukkit.getPlayerExact(p1);
-		Player player2 = Bukkit.getPlayerExact(p2);
+		Player p1 = Bukkit.getPlayerExact(pn1);
+		Player p2 = Bukkit.getPlayerExact(pn2);
 		time = time + 1;
 		if (time >= 0) {
 		  if (time == 0) {
 		  	stage = 1; //阶段变更：战前准备->战斗状态
-		  	sm("&a决斗开始！！亮剑吧！",player1,player2);
-		  	ArenaCommands.ExecuteArenaCommands(name, player1, player2);
+		  	sm("&a决斗开始！！亮剑吧！",p1,p2);
+		  	ArenaCommands.ExecuteArenaCommands(name, p1, p2);
 		  }
 		  if (time == 60) {
-		  	sm("&7决斗已进行一分钟..",player1,player2);
+		  	sm("&7决斗已进行一分钟..",p1,p2);
 		  }
 		  if (time == 120) {
-		  	sm("&7决斗已进行两分钟..",player1,player2);
+		  	sm("&7决斗已进行两分钟..",p1,p2);
 		  }
 		  if (time == 180) {
-		  	sm("&7决斗已进行三分钟！达到五分钟时仍为决出胜负则将判定为平局！",player1,player2);
+		  	sm("&7决斗已进行三分钟！达到五分钟时仍为决出胜负则将判定为平局！",p1,p2);
 		  }
 		  if (time == 240) {
-		  	sm("&7决斗已进行四分钟！达到五分钟时仍为决出胜负则将判定为平局！请抓紧时间",player1,player2);
+		  	sm("&7决斗已进行四分钟！达到五分钟时仍为决出胜负则将判定为平局！请抓紧时间",p1,p2);
 		  }
 		  if (time == 300) {
-		  	Finisher.normalEnd(name, p1, p2, true);
+		  	Finisher.normalEnd(name, pn1, pn2, true);
 		  }
 		} else {
-		  sm("&7决斗开始倒计时 &b{time}s",player1,"time",new String[]{""+(0-time)});
-		  sm("&7决斗开始倒计时 &b{time}s",player2,"time",new String[]{""+(0-time)});
+		  sm("&7决斗开始倒计时 &b{time}s",p1,"time",new String[]{""+(0-time)});
+		  sm("&7决斗开始倒计时 &b{time}s",p2,"time",new String[]{""+(0-time)});
 		}
 	  }
     }.runTaskTimerAsynchronously(Dantiao.getInstance(), 20, 20);
@@ -123,8 +123,8 @@ public class Arena {
   public void finish() {//结束这个竞技场的决斗
 	timer.cancel();
 	enable = false;
-	p1 = null;
-	p2 = null;
+	pn1 = null;
+	pn2 = null;
 	watchers = null;
 	player1Damage = 0;
 	player1MaxDamage = 0;
@@ -145,11 +145,11 @@ public class Arena {
   }
   
   public String getp1() {
-	return p1;
+	return pn1;
   }
   
   public String getp2() {
-	return p2;
+	return pn2;
   }
   
   public List<String> getWatchers() {
@@ -172,17 +172,17 @@ public class Arena {
   
   public String getTheOtherPlayer(String pn) {
 	String theother = null;
-	if (pn.equals(p1)) {
-	  theother = p2;
+	if (pn.equals(pn1)) {
+	  theother = pn2;
 	}
-	if (pn.equals(p2)) {
-	  theother = p1;
+	if (pn.equals(pn2)) {
+	  theother = pn1;
 	}
 	return theother;
   }
   
   public boolean isp1(String pn) {
-	if (p1.equals(pn)) {
+	if (pn1.equals(pn)) {
       return true;
 	}
 	return false;

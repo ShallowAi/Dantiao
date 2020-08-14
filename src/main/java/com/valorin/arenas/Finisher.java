@@ -56,7 +56,6 @@ public class Finisher {
 	      sm("&a[v]WOW！服务器为你的获胜放了一朵烟花~",w);
 	  }
 
-	  busyArenasName.remove(arena.getName());
 	  getInstance().getDuelAmountData().add();
 	
       ArenaEventAbs event;
@@ -111,6 +110,7 @@ public class Finisher {
 	              }
 	          }
               arena.finish();
+			  getInstance().getArenasHandler().removeArena(arena.getName());
           }
       }.runTaskAsynchronously(getInstance());
   }

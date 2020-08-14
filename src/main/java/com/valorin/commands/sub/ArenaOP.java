@@ -32,9 +32,9 @@ public class ArenaOP extends SubCommand implements AdminCommands{
 		sm("",p);
 		sm("&3&lDan&b&l&oTiao &f&l>> &a管理员帮助：竞技场操作",p,false);
 		sm("&b/dt arena(a) mode &f- &a进入/退出竞技场设置模式",p,false);
-		sm("&b/dt arena(a) create <竞技场编辑名> <竞技场名称(支持颜色符号)> &f- &a创造一个已设置好的竞技场",p,false);
-		sm("&b/dt arena(a) remove <竞技场编辑名> &f- &a删除一个已创建的竞技场",p,false);
-		sm("&b/dt arena(a) list &f- &a查看所有已创建的竞技场",p,false);
+		sm("&b/dt arena(a) create <竞技场编辑名> <竞技场名称(支持颜色符号)> &f- &a创造一个已设置好的竞技场，此命令魔改后已经失效",p,false);
+		sm("&b/dt arena(a) remove <竞技场编辑名> &f- &a删除一个竞技场",p,false);
+		sm("&b/dt arena(a) list &f- &a查看当前所有的竞技场",p,false);
 		sm("&b/dt arena(a) sw <竞技场编辑名> &f- &a启用观战功能并设置观战点",p,false);
 		sm("&b/dt arena(a) rw <竞技场编辑名> &f- &a取消观战功能并移除观战点",p,false);
 		sm("&b/dt arena(a) commands add <竞技场编辑名> <执行方式(player/op/console)> <内容> &f- &a添加一条开赛时执行的指令",p,false);
@@ -140,7 +140,7 @@ public class ArenaOP extends SubCommand implements AdminCommands{
 		  sm("&c[x]数据文件中已有竞技场&e{editname}&c了，请换一个编辑名！",p,"editname",new String[]{args[2]});
 		  return true;
 		}
-		
+
 		Location pointA = ac.getPointA(),pointB = ac.getPointB();
 		
 		areas.set("Arenas."+args[2]+".A.World", pointA.getWorld().getName());
@@ -159,7 +159,7 @@ public class ArenaOP extends SubCommand implements AdminCommands{
 		
 		areas.set("Arenas."+args[2]+".Name", args[3].replace("&", "§"));
 		
-		saveAreas();
+		//saveAreas();
   	    
 		getInstance().getArenasHandler().addArena(args[2]);
 		sm("&a[v]创建完成！现在玩家可以进入这个竞技场决斗了！现在你可以选择输入/dt a mode退出创建模式，也可以继续进行创建操作！",p);
