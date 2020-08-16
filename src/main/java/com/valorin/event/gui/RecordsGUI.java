@@ -68,7 +68,7 @@ public class RecordsGUI implements Listener {
 			  new Show().showRecord(p, inv.getItem(e.getRawSlot()),null);
 			}
 			if (e.getClick().equals(ClickType.RIGHT)) {
-			  ItemStack item = p.getItemInHand();
+			  ItemStack item = p.getInventory().getItemInMainHand();
 			  if (item != null) {
 				if (item.getType().equals(Material.PAPER)) {
 				  if (item.getAmount() == 1) {
@@ -81,7 +81,7 @@ public class RecordsGUI implements Listener {
 				      lore.remove(lore.size() - 1);lore.remove(lore.size() - 1);lore.remove(lore.size() - 1);
 				      printedPaperMeta.setLore(lore);
 				      printedPaper.setItemMeta(printedPaperMeta);
-				      p.setItemInHand(printedPaper);
+				      p.getInventory().setItemInMainHand(printedPaper);
 				      sm("&a战绩打印成功",p);
 				      return;
 				    }

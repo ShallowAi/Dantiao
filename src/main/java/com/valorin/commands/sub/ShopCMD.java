@@ -124,7 +124,7 @@ public class ShopCMD extends SubCommand implements InServerCommands{
 		  sm("&7正确用法：/dt s add <价格>，注意请将要上架的物品拿在手上",p);
 		  return true;
 		}
-	    ItemStack now = p.getItemInHand();
+	    ItemStack now = p.getInventory().getItemInMainHand();
 	    if (now.equals(new ItemStack(Material.AIR))) {
 	      sm("&c[x]请将要上架的物品拿在手中！",p);
 	      return true;
@@ -140,7 +140,7 @@ public class ShopCMD extends SubCommand implements InServerCommands{
 	    }
 	    
 	    int num = shop.getInt("Num");
-	    shop.set("n"+num+".Item", p.getItemInHand());
+	    shop.set("n"+num+".Item", p.getInventory().getItemInMainHand());
 		shop.set("n"+num+".Price", price);
 		shop.set("Num", num+1);
 		reloadList();
