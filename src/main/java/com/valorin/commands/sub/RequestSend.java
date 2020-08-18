@@ -45,7 +45,7 @@ public class RequestSend extends SubCommand implements InServerCommands{
 	   * 2、对方是否是自己，我 打 我 自 己
 	   * 3、双方是否存在黑名单
 	   * 4、是否处于规定时间段
-	   * 5、双方是否处于规定世界 【可关】
+	   * 5、双方是否处于规定世界/范围内 【可关】
 	   * 6、精力值是否够 【可关】
 	   * 7、是否重复发送
 	   * 8、是否对方已发送给你
@@ -90,6 +90,10 @@ public class RequestSend extends SubCommand implements InServerCommands{
 	      }
 	    }
 	    return true;
+	  }
+	  if (p.getLocation().distance(Bukkit.getPlayerExact(rn).getLocation()) > 64) {
+	  	sm("§c[x]你们之间相距太远注定不能在一起决斗, 距离大于64m.",p);
+	  	return true;
 	  }
 	  Energy e = Dantiao.getInstance().getEnergy();
 	  if (e.getEnable()) {

@@ -40,6 +40,10 @@ public class RequestAccept extends SubCommand implements InServerCommands{
 		  return true;
 	    }
 	  }
+	  if (a.getLocation().distance(Bukkit.getPlayerExact(rh.getSenders(an).get(0)).getLocation()) > 64) {
+		  sm("§c[x]你们之间相距太远注定不能在一起决斗, 距离大于64m.",a);
+		  return true;
+	  }
 	  if (args.length == 1) {
 		if (rh.getSenders(an).size() == 1) {
 		  String sn = rh.getSenders(an).get(0);

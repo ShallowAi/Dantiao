@@ -19,10 +19,10 @@ public class TypeCommands implements Listener {
 	  ArenasManager ah = Dantiao.getInstance().getArenasHandler();
 	  if (ah.isPlayerBusy(pn)) {
 		Arena arena = ah.getArena(ah.getPlayerOfArena(pn));
-		if (!e.getMessage().equals("/dt quit") && !(e.getMessage().equals("/dt q")) && !(e.getMessage().startsWith("/saoskill"))) {
+		if (!e.getMessage().startsWith("/dt") && !e.getMessage().startsWith("/saoskill") && !e.getMessage().startsWith("/duel") && !e.getMessage().startsWith("/buff")) {
 		  if (!p.isOp()) {
 		    e.setCancelled(true);
-		    sm("&c[x]决斗时禁用指令！",p);
+		    sm("&c[x]决斗时禁用其他指令！",p);
 		  }
 		} else {
 		  if (arena.getStage() == 0)
