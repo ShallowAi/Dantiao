@@ -113,7 +113,7 @@ public class MessageBuilder {
 	   }
 	   return finalMessage;
 	 } else {
-	   return "§8Error:This message hasn't registered!(消息未注册，可能是编码问题，请联系腐竹建议TA为语言文件转码)";
+	   return Chinese;
 	 }
    }
 }
