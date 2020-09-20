@@ -1,7 +1,7 @@
 package com.valorin.arenas;
 
 import static com.valorin.Dantiao.getInstance;
-import static com.valorin.arenas.ArenasManager.busyArenasName;
+import static com.valorin.arenas.ArenasManager.*;
 import static com.valorin.configuration.languagefile.MessageSender.gm;
 import static com.valorin.configuration.languagefile.MessageSender.sm;
 import static com.valorin.util.SyncBroadcast.bc;
@@ -9,6 +9,9 @@ import static com.valorin.util.SyncBroadcast.bc;
 import java.util.List;
 
 import lk.vexview.api.VexViewAPI;
+import lk.vexview.tag.TagDirection;
+import lk.vexview.tag.components.VexImageTag;
+import lk.vexview.tag.components.VexTextTag;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
@@ -65,7 +68,42 @@ public class Finisher {
           event = new ArenaFinishEvent(w, l, arena);
       }
       Bukkit.getServer().getPluginManager().callEvent(event);
-	
+	  // VexView 决斗结束TAG动画
+	  String arenaName = arena.getName();
+	  TagDirection td = new TagDirection(0, 0, 0, true, false);
+	  TagDirection td2 = new TagDirection(0, 180, 0,false,false);
+	  double x_pos = (getArenasPointA(arenaName).getX() + getArenasPointB(arenaName).getX()) / 2;
+	  double y_pos = (getArenasPointA(arenaName).getY() + getArenasPointB(arenaName).getY()) / 2 + 5;
+	  double z_pos = (getArenasPointA(arenaName).getZ() + getArenasPointB(arenaName).getZ()) / 2;
+	  // DUEL 文本
+	  VexTextTag duel_text = new VexTextTag(arenaName + "text", x_pos - 1, y_pos, z_pos, "DUEL", false, td);
+	  VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_text);
+	  // 左 用户 框
+	  VexImageTag duel_left = new VexImageTag(arenaName + "left", x_pos - 1, y_pos - 1, z_pos, "[local]duel_r.png", 2625, 774, 4, 1, td2);
+	  VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_left);
+	  // 左 用户 ID
+	  VexTextTag duel_left_uid = new VexTextTag(arenaName + "left_uid", x_pos - 3, y_pos - 1.5, z_pos - 0.2, Bukkit.getPlayerExact(winner).getName(), false, td);
+	  VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_left_uid);
+	  // 中 VS 分界
+	  VexImageTag duel_vs = new VexImageTag(arenaName + "vs", x_pos, y_pos - 1, z_pos - 0.01, "[local]VS2.0.png", 585, 396, 2, 1, td2);
+	  VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_vs);
+	  // 右 用户 框
+	  VexImageTag duel_right = new VexImageTag(arenaName + "right", x_pos + 3, y_pos - 1, z_pos, "[local]duel_l.png", 2625, 774, 4, 1, td2);
+	  VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_right);
+	  // 右 用户 ID
+	  VexTextTag duel_right_uid = new VexTextTag(arenaName + "right_uid", x_pos + 1, y_pos - 1.5, z_pos - 0.2, Bukkit.getPlayerExact(loser).getName(), false, td);
+	  VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_right_uid);
+	  // 计时 后 删除
+	  new BukkitRunnable(){
+		  public void run() {
+			  VexViewAPI.removeWorldTag(getArenasPointA(arenaName).getWorld(), arenaName+"text");
+			  VexViewAPI.removeWorldTag(getArenasPointA(arenaName).getWorld(), arenaName+"left");
+			  VexViewAPI.removeWorldTag(getArenasPointA(arenaName).getWorld(), arenaName+"left_uid");
+			  VexViewAPI.removeWorldTag(getArenasPointA(arenaName).getWorld(), arenaName+"vs");
+			  VexViewAPI.removeWorldTag(getArenasPointA(arenaName).getWorld(), arenaName+"right");
+			  VexViewAPI.removeWorldTag(getArenasPointA(arenaName).getWorld(), arenaName+"right_uid");
+		  }
+	  }.runTaskLaterAsynchronously(getInstance(),100);
       new BukkitRunnable() {
           public void run() {
         	  try {
@@ -113,6 +151,7 @@ public class Finisher {
 			  getInstance().getArenasHandler().removeArena(arena.getName());
           }
       }.runTaskAsynchronously(getInstance());
+
   }
   
   public static void compulsoryEnd(String name,Player finisher) {//强制结束，不予记录

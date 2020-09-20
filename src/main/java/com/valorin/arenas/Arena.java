@@ -114,7 +114,9 @@ public class Arena {
 		  }
 		} else {
 		  sm("&7决斗开始倒计时 &b{time}s",p1,"time",new String[]{""+(0-time)});
+		  p1.playSound(p1.getLocation(),"ui.button.click", 1.0F,1.0F);
 		  sm("&7决斗开始倒计时 &b{time}s",p2,"time",new String[]{""+(0-time)});
+		  p2.playSound(p2.getLocation(),"ui.button.click", 1.0F,1.0F);
 		}
 	  }
     }.runTaskTimerAsynchronously(Dantiao.getInstance(), 20, 20);

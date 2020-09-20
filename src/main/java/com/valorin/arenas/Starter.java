@@ -8,15 +8,22 @@ import static com.valorin.configuration.languagefile.MessageSender.sm;
 import java.util.List;
 import java.util.Random;
 
+import lk.vexview.api.VexViewAPI;
+import lk.vexview.tag.TagDirection;
+import lk.vexview.tag.components.VexImageTag;
+import lk.vexview.tag.components.VexTextTag;
+
 import org.bukkit.Bukkit;
 import org.bukkit.Location;
 import org.bukkit.Material;
+import org.bukkit.attribute.Attribute;
 import org.bukkit.entity.Player;
 
 import com.valorin.api.event.arena.ArenaStartEvent;
 import com.valorin.request.RequestsHandler;
 import com.valorin.util.ItemChecker;
 import com.valorin.dan.DansHandler;
+import org.bukkit.scheduler.BukkitRunnable;
 
 public class Starter {
 
@@ -114,15 +121,15 @@ public class Starter {
 		areas.set("Arenas."+arenaName+".A.X", pointA.getX());
 		areas.set("Arenas."+arenaName+".A.Y", pointA.getY());
 		areas.set("Arenas."+arenaName+".A.Z", pointA.getZ());
-		areas.set("Arenas."+arenaName+".A.YAW", (float)pointA.getYaw());
-		areas.set("Arenas."+arenaName+".A.PITCH", (float)pointA.getPitch());
+		areas.set("Arenas."+arenaName+".A.YAW", pointA.getYaw());
+		areas.set("Arenas."+arenaName+".A.PITCH", pointA.getPitch());
 
 		areas.set("Arenas."+arenaName+".B.World", pointB.getWorld().getName());
 		areas.set("Arenas."+arenaName+".B.X", pointB.getX());
 		areas.set("Arenas."+arenaName+".B.Y", pointB.getY());
 		areas.set("Arenas."+arenaName+".B.Z", pointB.getZ());
-		areas.set("Arenas."+arenaName+".B.YAW", (float)pointB.getYaw());
-		areas.set("Arenas."+arenaName+".B.PITCH", (float)pointB.getPitch());
+		areas.set("Arenas."+arenaName+".B.YAW", pointB.getYaw());
+		areas.set("Arenas."+arenaName+".B.PITCH", pointB.getPitch());
 		areas.set("Arenas."+arenaName+".Name", arenaName);
 
 		getInstance().getArenasHandler().addArena(arenaName);
@@ -153,10 +160,48 @@ public class Starter {
 				p2.setFlying(false);
 			}
 		}
-		p1.setHealth(p1.getMaxHealth());
-		p2.setHealth(p2.getMaxHealth());
+		p1.setHealth(p1.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue());
+		p2.setHealth(p2.getAttribute(Attribute.GENERIC_MAX_HEALTH).getValue());
 
+		// 开始竞技
 		arena.start(pn1, pn2);
+
+		// VexView 决斗开场TAG动画
+		// Tag 方向
+		TagDirection td = new TagDirection(0, 0, 0, true, false);
+		TagDirection td2 = new TagDirection(0, 180, 0,false,false);
+		double x_pos = (getArenasPointA(arenaName).getX() + getArenasPointB(arenaName).getX()) / 2;
+		double y_pos = (getArenasPointA(arenaName).getY() + getArenasPointB(arenaName).getY()) / 2 + 5;
+		double z_pos = (getArenasPointA(arenaName).getZ() + getArenasPointB(arenaName).getZ()) / 2;
+		// DUEL 文本
+		VexTextTag duel_text = new VexTextTag(arenaName + "text", x_pos - 1, y_pos, z_pos, "DUEL", false, td);
+		VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_text);
+		// 左 用户 框
+		VexImageTag duel_left = new VexImageTag(arenaName + "left", x_pos - 1, y_pos - 1, z_pos, "[local]duel_r.png", 2625, 774, 4, 1, td2);
+		VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_left);
+		// 左 用户 ID
+		VexTextTag duel_left_uid = new VexTextTag(arenaName + "left_uid", x_pos - 3, y_pos - 1.5, z_pos - 0.2, p1.getName(), false, td);
+		VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_left_uid);
+		// 中 VS 分界
+		VexImageTag duel_vs = new VexImageTag(arenaName + "vs", x_pos, y_pos - 1, z_pos - 0.01, "[local]VS2.0.png", 585, 396, 2, 1, td2);
+		VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_vs);
+		// 右 用户 框
+		VexImageTag duel_right = new VexImageTag(arenaName + "right", x_pos + 3, y_pos - 1, z_pos, "[local]duel_l.png", 2625, 774, 4, 1, td2);
+		VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_right);
+		// 右 用户 ID
+		VexTextTag duel_right_uid = new VexTextTag(arenaName + "right_uid", x_pos + 1, y_pos - 1.5, z_pos, p2.getName(), false, td);
+		VexViewAPI.addWorldTag(arena.getLoaction(true).getWorld(), duel_right_uid);
+		// 计时 后 删除
+		new BukkitRunnable(){
+			public void run() {
+				VexViewAPI.removeWorldTag(getArenasPointA(arena.getName()).getWorld(), arena.getName()+"text");
+				VexViewAPI.removeWorldTag(getArenasPointA(arena.getName()).getWorld(), arena.getName()+"left");
+				VexViewAPI.removeWorldTag(getArenasPointA(arena.getName()).getWorld(), arena.getName()+"left_uid");
+				VexViewAPI.removeWorldTag(getArenasPointA(arena.getName()).getWorld(), arena.getName()+"vs");
+				VexViewAPI.removeWorldTag(getArenasPointA(arena.getName()).getWorld(), arena.getName()+"right");
+				VexViewAPI.removeWorldTag(getArenasPointA(arena.getName()).getWorld(), arena.getName()+"right_uid");
+			}
+		}.runTaskLaterAsynchronously(getInstance(),100);
 
 		RequestsHandler rh = getInstance().getRequestsHandler();
 		rh.clearRequests(pn1,0,pn2);

@@ -113,7 +113,7 @@ public class MessageBuilder {
 	   }
 	   return finalMessage;
 	 } else {
-	   return Chinese;
+	   return Chinese.replace("&","§");
 	 }
    }
 }
